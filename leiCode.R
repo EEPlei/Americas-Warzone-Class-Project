@@ -6,3 +6,4 @@ dupes = df %>% "["(.,df %>% select(`Case Number`) %>%
   select(`Case Number`) %>% 
   unlist()
 df %>% filter(`Case Number` %in% dupes) %>% arrange(`Case Number`) %>% View()
+
