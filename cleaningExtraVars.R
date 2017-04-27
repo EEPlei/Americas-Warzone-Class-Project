@@ -37,4 +37,4 @@ colnames(vacantData)[2] = "vacantLots"
 vacantData = left_join(vacantData, areas, by = c("Community Area" = "Community Area Name"))
 vacantData$`Community Area.y`[is.na(vacantData$`Community Area.y`)] = c(57,45)
 
-
+save(vacantData, file = "/home/grad/rkm22/sta644/spatio_temp_proj/demoData/vacant_prop_data.Rdata")

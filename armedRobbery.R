@@ -1,4 +1,4 @@
-source("loadData.R")
+source("/home/grad/rkm22/sta644/spatio_temp_proj/loadData.R")
 
 gunTypes = c("ARMED: HANDGUN", "ARMED: OTHER FIREARM", 
              "ATTEMPT: ARMED-HANDGUN", "ATTEMPT: ARMED-OTHER FIREARM")
