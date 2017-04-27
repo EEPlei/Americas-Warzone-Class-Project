@@ -26,9 +26,15 @@ load("full_data_set.Rdata")
 areas = st_read('/home/grad/rkm22/sta644/spatio_temp_proj/shapeData/CommAreas.shp', 
                 quiet=TRUE, stringsAsFactors=TRUE)
 source("ColinsVeryUsefulCode.R")
-W = areas %>% st_distance() %>% strip_class() < 1e-6
+#W = areas %>% st_distance() %>% strip_class() < 1e-6
+if (!file.exists("weightMatrix.Rdata"))
+{save(W, file = "weightMatrix.Rdata")
+} else{ load("weightMatrix.Rdata")}
+D = diag(rowSums(W))
 
-Wlist = mat2listw(W)
+X = model.matrix(~scale(dfFull[, !grepl("community area", colnames(dfFull) %>% tolower())]))
+log_offset = log(dfFull$ArmedRobbery)
+y = dfFull$ArmedRobbery
 
 pois_model = "model{
   for(i in 1:length(y)) {
@@ -37,7 +43,7 @@ y_pred[i] ~ dpois(lambda[i])
 log(lambda[i]) <- log_offset[i] + X[i,] %*% beta + omega[i]
 }
 
-for(i in 1:2) {
+for(i in 1:37) {
 beta[i] ~ ddexp(0, rambda)#dnorm(0,1)
 }
 
