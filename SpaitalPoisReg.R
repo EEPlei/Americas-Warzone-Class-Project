@@ -78,3 +78,9 @@ if (!file.exists("pois_model.Rdata"))
 } else {
   load("pois_model.Rdata")
 }
+
+
+beta_params = get_coda_parameter(pois_coda,"beta")
+ar_params = get_coda_parameter(pois_coda,"sigma|phi")
+omega = get_coda_parameter(pois_coda,"omega") %>% post_summary()
+y_pred = get_coda_parameter(pois_coda,"y_pred") %>% post_summary()
