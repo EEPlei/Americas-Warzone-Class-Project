@@ -25,10 +25,14 @@ load("full_data_set.Rdata")
 
 areas = st_read('/home/grad/rkm22/sta644/spatio_temp_proj/shapeData/CommAreas.shp', 
                 quiet=TRUE, stringsAsFactors=TRUE)
+areas = areas %>% mutate(`Community Area` = as.numeric(as.character(AREA_NUM_1)))
+areas = areas %>% arrange(`Community Area`) %>% select(-`Community Area`)
+
 source("ColinsVeryUsefulCode.R")
-#W = areas %>% st_distance() %>% strip_class() < 1e-6
+W = areas %>% st_distance() %>% strip_class() < 1e-6
 if (!file.exists("weightMatrix.Rdata"))
-{save(W, file = "weightMatrix.Rdata")
+{ W = areas %>% st_distance() %>% strip_class() < 1e-6
+  save(W, file = "weightMatrix.Rdata")
 } else{ load("weightMatrix.Rdata")}
 D = diag(rowSums(W))
 
