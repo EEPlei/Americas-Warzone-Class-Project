@@ -1,3 +1,10 @@
+# Check for libraries and install #
+listOfPackages <- c("dplyr", "ggplot2", "rgdal", "rgeos", "e1071", "sp", "raster", "maptools", "plyr", "nnet", "magrittr", 
+                    "lubridate", "stringr", "data.table", "png", "ggmap", "modelr", "tidyr", "rjags", "stringr", "readr",
+                    "purrr", "forcats", "forecast", "astsa", "fields", "sf", "data.table", "lubridate", "dplyr")
+NewPackages <- listOfPackages[!(listOfPackages %in% installed.packages()[,"Package"])]
+if(length(NewPackages)>0) {install.packages(NewPackages,repos="http://cran.rstudio.com/")}
+
 library(raster)
 library(magrittr)
 library(modelr)
@@ -12,9 +19,7 @@ library(forcats)
 library(forecast)
 library(astsa)
 library(fields)
-library(readr)
 library(sf)
-library(forcats)
 library(data.table)
 library(lubridate)
 library(dplyr)
@@ -29,7 +34,7 @@ areas = areas %>% mutate(`Community Area` = as.numeric(as.character(AREA_NUM_1))
 areas = areas %>% arrange(`Community Area`) %>% select(-`Community Area`)
 
 source("ColinsVeryUsefulCode.R")
-W = areas %>% st_distance() %>% strip_class() < 1e-6
+#W = areas %>% st_distance() %>% strip_class() < 1e-6
 if (!file.exists("weightMatrix.Rdata"))
 { W = areas %>% st_distance() %>% strip_class() < 1e-6
   save(W, file = "weightMatrix.Rdata")
