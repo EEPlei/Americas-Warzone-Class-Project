@@ -30,3 +30,12 @@ strip_class = function(obj)
   attr(obj,"class") = NULL
   obj
 }
+
+morans_I = function(y, w)
+{
+  n = length(y)
+  y_bar = mean(y)
+  num = sum(w * (y-y_bar) %*% t(y-y_bar))  
+  denom = sum( (y-y_bar)^2 )
+  (n/sum(w)) * (num/denom)
+}

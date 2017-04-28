@@ -35,7 +35,7 @@ D = diag(rowSums(W))
 X = model.matrix(~scale(dfFull[, !grepl("community area", colnames(dfFull) %>% tolower())]))
 log_offset = log(dfFull$ArmedRobbery)
 y = dfFull$ArmedRobbery
-
+morans_I(y = y, w = D %*% W)
 pois_model = "model{
   for(i in 1:length(y)) {
 y[i] ~ dpois(lambda[i])
