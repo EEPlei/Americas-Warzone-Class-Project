@@ -94,7 +94,7 @@ This paper is poop. \newline
 \end{center}
 \end{figure}
 
-\noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the residuals. 
+\noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the residuals. The PACF and ACF plots for the data from the South Side are displayed below. The ACF plot shows evidence of seasonality. After lag 1, there are no large values for the PACF. \newline
 
 
 \begin{multicols}{2}
@@ -102,13 +102,24 @@ This paper is poop. \newline
 \includegraphics[width=80mm]{Plots/south_ACF.png}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}
 \includegraphics[width=80mm]{Plots/south_PACF.png}
 \end{figure}
 \end{multicols}
 
+\noindent Based on the ACF and PACF plots, an AR(4) model was fit with a seasonal component with period twelve. The residuals plot for this model does not display any remaining structure in the data. 
 
+\begin{multicols}{2}
+\begin{figure}[H]
+\includegraphics[width=80mm]{Plots/south_resid_ACF.png}
+\end{figure}
 
+\begin{figure}
+\includegraphics[width=80mm]{Plots/south_resid_PACF.png}
+\end{figure}
+\end{multicols}
+
+\end{multicols}
 
 \newpage
 
