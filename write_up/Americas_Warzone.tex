@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{multicol}
-\usepackage[all]{hypcap} 
+%\usepackage[all]{hypcap} 
 \usepackage{listings}
 \usepackage{float}
 \usepackage{amsfonts}
@@ -18,19 +18,19 @@
 
 
 
-\title{America's Warzone: Predicting Gun Violence in Chicago}
+\title{America's Warzone: Modeling Armed Robberies in Chicago}
 
 \author{
 Reuben K. McCreanor\thanks{Department of Statistical Science, Duke University} \\  
 \texttt{reuben.mccreanor@duke.edu} \\
 \And
-Anna Yanchenko\footnotemark[1] \\
+Anna K. Yanchenko\footnotemark[1] \\
 \texttt{anna.yanchenko@duke.edu} \\
 \And 
 Lei Qian\footnotemark[1] \\
 \texttt{lei.qian@duke.edu} \\
 \And
-Megan Robertson\footnotemark[1] \\
+Megan S. Robertson\footnotemark[1] \\
 \texttt{megan.robertson@duke.edu} \\ 
 }
 
@@ -54,19 +54,15 @@ Megan Robertson\footnotemark[1] \\
 
 \maketitle
 
-\begin{abstract}
-This paper is poop. \newline
-\end{abstract}
-
 \section{Introduction}
 \label{headings}
 
-\noindent When one thinks of crime in America, Chicago is a city that often comes to mind. Donald Trump frequently discusses the issues of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports cite that Chicago should not be called the ‚Äúcrime capital‚Äù of America. It‚Äôs violent rate is less than other cities such as St.  Louis and Detroit. \hyperlink{Ref1}{[1]} This project examines crime in Chicago, specifically armed robberies, from 2011-2017. \newline
+\noindent The city of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports conclude that Chicago should not be called the crime capitalÄù of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref1}{[1]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
 
 \section{Data}
 \label{headings}
 
-\noindent The crime data used for this project comes from the City of Chicago's website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contains every reported crime in Chicago from 2001 to present day. In addition to the type of crime reported (battery, assault, etc.), there is information on the location, time, and other details. The data set was reduced to only armed robberies. 
+\noindent The crime data used for this project came from the City of Chicago's website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contained every reported crime in Chicago from 2001 to the present (\autoref{data}). In addition to the type of crime reported (battery, assault, etc.), there was information on the location and time of the crime. The data set was reduced to only consider armed robberies. 
 
 \begin{figure}[h]
 \begin{center}
@@ -77,49 +73,93 @@ This paper is poop. \newline
 \end{center}
 \end{figure}
 
-\section{EDA}
 
 \section{Time Series Analysis}
 
-\subsection{Models}
 
-\noindent The city of Chicago is divided into neighborhoods known as sides. These areas can be seen in \autoref{sides}. The borders below are the boundaries of the community area colored by the side.  
-
+\noindent The city of Chicago is divided into regions known as sides (\autoref{sides}), where each side is comprised of several neighborhoods. There is a lot of variation in the population (\autoref{population}) and the number of armed robberies per capita (\autoref{counts}) for these sides.  Additionally, some sides are more residential, while others are more commercial.\newline
+ 
 \begin{figure}[h]
 \begin{center}
 
 \includegraphics[width=0.8\textwidth,keepaspectratio]{CopyOfside.png}
-\caption{The "sides" of Chicago.}
+\caption{The ``sides" of Chicago.  The borders correspond to  the boundaries of the community areas colored by the side.}
 \label{sides}
 \end{center}
 \end{figure}
 
-\noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the residuals. The PACF and ACF plots for the data from the South Side are displayed below. The ACF plot shows evidence of seasonality. After lag 1, there are no large values for the PACF. \newline
 
+\begin{figure}[h]
+\begin{center}
+
+\includegraphics[width=0.8\textwidth,keepaspectratio]{Plots/population.png}
+\caption{The population distribution of the  ``sides" of Chicago.  The borders correspond to  the boundaries of the community areas colored by the side.}
+\label{population}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+
+\includegraphics[width=0.8\textwidth,keepaspectratio]{Plots/counts_by_pop.png}
+\caption{The number of armed robberies per capita for the ``sides" of Chicago between 2003 and 2016.  The borders correspond to  the boundaries of the community areas colored by the side.}
+\label{counts}
+\end{center}
+\end{figure}
+
+\noindent ARIMA models were fit to predict the counts of monthly armed robberies in each side of the city between 2003 and 2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure that there was no remaining structure in the residuals. The PACF and ACF plots for the data from the South Side are displayed below. The ACF plot showed evidence of seasonality at lag 12 (i.e. yearly trends). After lag 1, there was no large values for the PACF, so no moving average terms were included in the model. \newline
+
+\break 
+\begin{multicols}{2}
+\begin{figure}[H]
+\includegraphics[width=70mm]{Plots/south_ACF.png}
+\caption{ACF plot for the number of monthly armed robberies in the South Side of Chicago between 2003 and 2016.}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[width=70mm]{Plots/south_PACF.png}
+\caption{PACF plot for the number of monthly armed robberies in the South Side of Chicago between 2003 and 2016.}
+\end{figure}
+\end{multicols}
+
+\noindent Based on the ACF \autoref{south_resid_ACF} and PACF \autoref{south_resid_PACF} plots, an AR(4) model was fit with a seasonal component with period twelve. The residuals plot for this model did not display any remaining structure in the data and the coefficients are in \autoref{south_coef}. 
 
 \begin{multicols}{2}
 \begin{figure}[H]
-\includegraphics[width=80mm]{Plots/south_ACF.png}
+\includegraphics[width=70mm]{Plots/south_resid_ACF.png}
+\caption{ACF plot of the residuals of an AR(4) model with a period twelve seasonal component fit to the monthly count of armed robberies for the South Side.}
+\label{south_resid_ACF}
 \end{figure}
 
-\begin{figure}
-\includegraphics[width=80mm]{Plots/south_PACF.png}
-\end{figure}
-\end{multicols}
-
-\noindent Based on the ACF and PACF plots, an AR(4) model was fit with a seasonal component with period twelve. The residuals plot for this model does not display any remaining structure in the data. 
-
-\begin{multicols}{2}
 \begin{figure}[H]
-\includegraphics[width=80mm]{Plots/south_resid_ACF.png}
+\includegraphics[width=70mm]{Plots/south_resid_PACF.png}
+\caption{PACF plot of the residuals of an AR(4) model with a period twelve seasonal component fit to the monthly count of armed robberies for the South Side.}
 \end{figure}
-
-\begin{figure}
-\includegraphics[width=80mm]{Plots/south_resid_PACF.png}
-\end{figure}
+\label{south_resid_PACF}
 \end{multicols}
 
-\end{multicols}
+
+ \begin{table}[h!]
+\centering
+\begin{tabular}{|p{2.3cm}|c| c|c|c|c|} 
+ \hline
+ & ar1 &    ar2 &    ar3 &    ar4 &   sar1 \\ [0.5ex] 
+ \hline\hline
+Coefficient & 0.3850 & 0.1328 & 0.0825  &0.0167 & 0.4784  \\\hline
+Standard Error &   0.0793 & 0.0832&  0.0824 & 0.0771  &0.0708   \\
+ \hline
+\end{tabular}
+\caption{Summary of model fit for the AR(4) with period 12 seasonal component fit to the monthly count of armed robberies for the South Side.}
+\label{south_coef}
+\end{table}
+
+\noindent The coefficient estimates for all of the different sides were very similar.  While some sides displayed evidence of higher order autoregressive structure or the addition of moving average terms, as compared to the South Side, all sides had a clear period 12 seasonal component, indicating strong yearly trends for all sides of the city.  The coefficient estimates were positive for the autoregressive terms, indicating that there was a positive correlation between the amount of monthly armed robberies over time.  Plots of the various model fits can be found in \autoref{appendix_regression}.  It is interesting that although the sides of Chicago are quite diverse in terms of population and demographics, as well as the number of monthly armed robberies, the temporal trends for all of the sides are very similar.  Although the count of the monthly armed robberies differs by side of the city, the overall temporal trend is the same across Chicago and has a strong yearly, autoregressive trend.\newline   
+
+\section{Spatial Models}
+
+
+
+
 
 \newpage
 
@@ -136,12 +176,235 @@ This paper is poop. \newline
 \newpage
 
 \section{Appendix}
-\label{headings}
+\label{appendix}
 
 
 \subsection{Time Series Modeling Plots}
 \label{appendix_regression}
 
+ 
+\subsubsection{West Side}
+ 
+\begin{multicols}{2}
+ \begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/West_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/West_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/west_resids_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/west_resids_PACF.png}
+\end{figure}
+ \end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/west_resids.png}
+\end{figure}
+\end{center}
+ 
+
+ 
+\subsubsection{Southwest Side}
+ 
+\begin{multicols}{2}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southwest_acf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southwest_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southwest_resid_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southwest_resid_pacf.png}
+\end{figure}
+ 
+\end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southwest_resid.png}
+\end{figure}
+\end{center}
+ 
+ 
+\subsubsection{Southeast Side}
+ 
+\begin{multicols}{2}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southeast_acf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southeast_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southeast_resid_acf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southeast_resid_pacf.png}
+\end{figure}
+ 
+\end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/southeast_resid.png}
+\end{figure}
+\end{center}
+\end{document}
+ 
+ 
+\subsubsection{Northwest Side}
+ 
+\begin{multicols}{2}
+ \begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/northwest_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/northwest_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/northwest_resid_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/northwest_resid_PACF.png}
+\end{figure}
+ \end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/northwest_resids.png}
+\end{figure}
+\end{center}
+ 
+
+ 
+\subsubsection{North Side}
+ 
+\begin{multicols}{2}
+ \begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/north_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/North_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/north_resid_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/north_resid_PACF.png}
+\end{figure}
+ \end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/north_residuals.png}
+\end{figure}
+\end{center}
+ 
+
+ 
+\subsubsection{Far Southwest Side}
+\begin{multicols}{2} 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_acf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_pacf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_resid_acf.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_resid_pacf.png}
+\end{figure}
+ 
+\end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_resid.png}
+\end{figure}
+\end{center}
+ 
+
+ 
+\subsubsection{Far North Side}
+ 
+\begin{multicols}{2} 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_north_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_north_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_north_resids_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_north_resids_PACF.png}
+\end{figure}
+ \end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/far_north_resids.png}
+\end{figure}
+ \end{center}
+ 
+
+ 
+\subsubsection{Central}
+ \begin{multicols}{2}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/Central_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/Central_PACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/Central_resid_ACF.png}
+\end{figure}
+ 
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/Central_resid_PACF.png}
+\end{figure}
+ \end{multicols}
+ 
+\begin{center}
+\begin{figure}[H]
+\includegraphics[height=50mm, width=80mm]{Plots/Central_residuals.png}
+\end{figure}
 
 \end{document}
 
