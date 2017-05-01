@@ -7,6 +7,13 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage[all]{hypcap} 
+\usepackage{listings}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{breqn}
+\usepackage{bm}
+\setlength{\columnsep}{1cm}
 %\linenumbers% Uncomment for line numbers
 
 
@@ -59,13 +66,13 @@ This paper is poop. \newline
 \section{Data}
 \label{headings}
 
-\noindent The crime data used for this project comes from the City of Chicago’s website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contains every reported crime in Chicago from 2001 to present day. In addition to the type of crime reported (battery, assault, etc.), there is information on the location, time, and other details. The data set was reduced to only armed robberies. 
+\noindent The crime data used for this project comes from the City of Chicago's website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contains every reported crime in Chicago from 2001 to present day. In addition to the type of crime reported (battery, assault, etc.), there is information on the location, time, and other details. The data set was reduced to only armed robberies. 
 
 \begin{figure}[h]
 \begin{center}
 
 \includegraphics[width=0.8\textwidth,keepaspectratio]{data.jpg}
-\caption{The city of Chicago website provides a data set containing information on crimes commited in the city from 2001 to present day.}
+\caption{The city of Chicago website provides a data set containing information on crimes committed in the city from 2001 to present day.}
 \label{data}
 \end{center}
 \end{figure}
@@ -87,18 +94,21 @@ This paper is poop. \newline
 \end{center}
 \end{figure}
 
-\noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the resiudals. 
+\noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the residuals. 
+
 
 \begin{multicols}{2}
-\begin{figure}[H]
-\includegraphics[width = 80mm]{Plots/south_PACF.png}
-\end{figure}
-
 \begin{figure}[H]
 \includegraphics[width=80mm]{Plots/south_ACF.png}
 \end{figure}
 
+\begin{figure}[H]
+\includegraphics[width=80mm]{Plots/south_PACF.png}
+\end{figure}
 \end{multicols}
+
+
+
 
 \newpage
 
