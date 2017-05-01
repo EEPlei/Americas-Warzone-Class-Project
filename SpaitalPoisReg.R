@@ -42,6 +42,7 @@ if (!file.exists("weightMatrix.Rdata"))
 D = diag(rowSums(W))
 
 X = model.matrix(~scale(dfFull %>% select(-contains("community area"), -contains("geog"), -contains("armedrobbery"))))
+Xvars = dfFull %>% select(-contains("community area"), -contains("geog"), -contains("armedrobbery")) %>% colnames()
 log_offset = log(dfFull$ArmedRobbery)
 y = dfFull$ArmedRobbery
 morans_I(y = y, w = D %*% W)
@@ -53,14 +54,14 @@ log(lambda[i]) <-  X[i,] %*% beta + omega[i]
 }
 
 for(i in 1:nCol) {
-beta[i] ~ ddexp(0, rambda)#dnorm(0,1)
+beta[i] ~ ddexp(0, eta)#dnorm(0,1)
 }
 
 omega ~ dmnorm(rep(0,length(y)), tau * (D - phi*W))
 sigma2 <- 1/tau
 tau ~ dgamma(2, 2)
 phi ~ dunif(0,0.99)
-rambda ~ dunif(0.001, 10)
+eta ~ dunif(0.001, 10)
 }"
 
 if (!file.exists("poisOrig_model.Rdata"))
@@ -80,7 +81,7 @@ if (!file.exists("poisOrig_model.Rdata"))
   update(m, n.iter=25000)#, progress.bar="none")
   
   pois_coda = coda.samples(
-    m, variable.names=c("sigma2","tau", "beta", "omega", "phi", "y_pred"),
+    m, variable.names=c("sigma2","tau", "beta", "omega", "phi", "y_pred", "eta"),
     n.iter=25000, thin=25
   )
   save(pois_coda, m, file="poisOrig_model.Rdata")
@@ -90,6 +91,26 @@ if (!file.exists("poisOrig_model.Rdata"))
 
 
 beta_params = get_coda_parameter(pois_coda,"beta")
+colnames(beta_params) = c("Intercept", Xvars)
 ar_params = get_coda_parameter(pois_coda,"sigma|phi")
 omega = get_coda_parameter(pois_coda,"omega") %>% post_summary()
 y_pred = get_coda_parameter(pois_coda,"y_pred") %>% post_summary()
+
+armed_robbery_pred = areas %>% 
+  mutate(obs_pred = y_pred$post_mean, resid = dfFull$ArmedRobbery - y_pred$post_mean)
+  
+
+
+
+grid.arrange(
+  ggplot(armed_robbery_pred) +
+    geom_sf(aes(fill=obs_pred), color=NA) + 
+    labs(title="Predicted Cases",fill=""),
+  ggplot(armed_robbery_pred) +
+    geom_sf(aes(fill=resid), color=NA) +
+    labs(title="Residuals",fill=""),
+  ncol=2
+)
+
+# RMSE 
+armed_robbery_pred$resid %>% .^2 %>% mean() %>% sqrt()
