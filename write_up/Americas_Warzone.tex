@@ -13,6 +13,7 @@
 \usepackage{multicol}
 \usepackage{breqn}
 \usepackage{bm}
+\usepackage{adjustbox}
 \setlength{\columnsep}{1cm}
 %\linenumbers% Uncomment for line numbers
 
@@ -57,21 +58,54 @@ Megan S. Robertson\footnotemark[1] \\
 \section{Introduction}
 \label{headings}
 
-\noindent The city of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports conclude that Chicago should not be called the crime capitalÄù of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref1}{[1]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
+\noindent The city of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports conclude that Chicago should not be called the crime capital?? of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref1}{[1]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
 
 \section{Data}
 \label{headings}
 
 \noindent The crime data used for this project came from the City of Chicago's website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contained every reported crime in Chicago from 2001 to the present (\autoref{data}). In addition to the type of crime reported (battery, assault, etc.), there was information on the location and time of the crime. The data set was reduced to only consider armed robberies. 
 
-\begin{figure}[h]
-\begin{center}
-
-\includegraphics[width=0.8\textwidth,keepaspectratio]{data.jpg}
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[width=0.8\textwidth,keepaspectratio]{data.jpg}
+% \caption{The city of Chicago website provides a data set containing information on crimes committed in the city from 2001 to present day.}
+% \label{data}
+% \end{center}
+% \end{figure}
+\begin{table}[h]
+\centering
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{ccccccccc}
+  \hline
+Case Number & Date & Block & Description & Beat & District & Ward & Community Area & Location \\ 
+  \hline
+HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION & 2232 &  22 &  21 &  73 & (41.706819022, -87.654048084) \\ 
+  HN184333 & 02/15/2007 07:00:00 PM & 093XX S WOODLAWN AVE & TELEPHONE THREAT & 413 &   4 &   8 &  47 & (41.725252492, -87.594860893) \\ 
+  HN182527 & 02/17/2007 09:00:00 PM & 042XX S COTTAGE GROVE AVE & OTHER VIOLATION & 213 &   2 &   4 &  38 & (41.81741558, -87.606719823) \\ 
+  HN183814 & 02/18/2007 10:06:37 PM & 063XX N SHERIDAN RD & TO PROPERTY & 2433 &  24 &  49 &  77 & (41.996866019, -87.655592844) \\ 
+  HN182579 & 02/18/2007 12:20:00 AM & 033XX W HURON ST & DOMESTIC BATTERY SIMPLE & 1121 &  11 &  27 &  23 & (41.893682761, -87.710701702) \\ 
+  HN182986 & 02/18/2007 10:20:00 AM & 042XX N CENTRAL AVE & OVER \$500 & 1624 &  16 &  38 &  15 & (41.957385814, -87.767141739) \\ 
+  HN183716 & 02/18/2007 08:40:00 PM & 037XX S MICHIGAN AVE & DOMESTIC BATTERY SIMPLE & 211 &   2 &   3 &  35 & (41.827167256, -87.623160687) \\ 
+  HN184010 & 02/19/2007 02:40:00 AM & 010XX N LAWNDALE AVE & DOMESTIC BATTERY SIMPLE & 1112 &  11 &  27 &  23 & (41.89998654, -87.71890157) \\ 
+  HN181071 & 02/17/2007 02:21:00 AM & 051XX S CALUMET AVE & POSS FIREARM/AMMO:NO FOID CARD & 232 &   2 &   3 &  40 & (41.801609105, -87.617736187) \\ 
+  HN182079 & 02/17/2007 04:00:00 PM & 034XX W FLOURNOY ST & DOMESTIC BATTERY SIMPLE & 1133 &  11 &  24 &  27 & (41.872709648, -87.711929688) \\ 
+  HN184350 & 02/19/2007 12:00:00 AM & 013XX N WOLCOTT AVE & FROM BUILDING & 1424 &  14 &   1 &  24 & (41.905889056, -87.674299261) \\ 
+  HN184306 & 02/15/2007 12:01:00 AM & 001XX N PARKSIDE AVE & ILLEGAL USE CASH CARD & 1512 &  15 &  29 &  25 & (41.88301997, -87.766605275) \\ 
+  HN183370 & 02/09/2007 10:00:00 AM & 024XX W DEVON AVE & SIMPLE & 2413 &  24 &  50 &   2 & (41.99771689, -87.690448237) \\ 
+  HN183500 & 02/18/2007 05:10:00 PM & 070XX S THROOP ST & DOMESTIC BATTERY SIMPLE & 734 &   7 &  17 &  67 & (41.7658997, -87.65656296) \\ 
+  HN184055 & 02/19/2007 05:30:00 AM & 005XX W ROSCOE ST & TO RESIDENCE & 2331 &  19 &  44 &   6 & (41.943338611, -87.64332075) \\ 
+  HN184352 & 02/19/2007 10:45:00 AM & 003XX N MICHIGAN AVE & FROM BUILDING & 122 &   1 &  42 &  32 & (41.887845852, -87.624560336) \\ 
+  HN181018 & 02/17/2007 01:31:00 AM & 056XX S WABASH AVE & TO LAND & 233 &   2 &  20 &  40 & (41.792323044, -87.624025834) \\ 
+  HN182857 & 02/18/2007 07:39:41 AM & 014XX W LUNT AVE & FORCIBLE ENTRY & 2431 &  24 &  49 &   1 & (42.009107852, -87.666843608) \\ 
+  HN177373 & 02/15/2007 08:44:00 AM & 054XX S CORNELL AVE & TO VEHICLE & 2132 &   2 &   5 &  41 & (41.796263314, -87.585435453) \\ 
+  HN183280 & 01/14/2007 12:00:00 PM & 021XX W BIRCHWOOD AVE & DOMESTIC BATTERY SIMPLE & 2424 &  24 &  49 &   1 & (42.017948603, -87.683418074) \\ 
+   \hline
+\end{tabular}
+\end{adjustbox}
 \caption{The city of Chicago website provides a data set containing information on crimes committed in the city from 2001 to present day.}
 \label{data}
-\end{center}
-\end{figure}
+\end{table}
+
 
 
 \section{Time Series Analysis}
@@ -139,23 +173,46 @@ Megan S. Robertson\footnotemark[1] \\
 \end{multicols}
 
 
- \begin{table}[h!]
-\centering
-\begin{tabular}{|p{2.3cm}|c| c|c|c|c|} 
- \hline
- & ar1 &    ar2 &    ar3 &    ar4 &   sar1 \\ [0.5ex] 
- \hline\hline
-Coefficient & 0.3850 & 0.1328 & 0.0825  &0.0167 & 0.4784  \\\hline
-Standard Error &   0.0793 & 0.0832&  0.0824 & 0.0771  &0.0708   \\
- \hline
-\end{tabular}
-\caption{Summary of model fit for the AR(4) with period 12 seasonal component fit to the monthly count of armed robberies for the South Side.}
-\label{south_coef}
+\begin{table}[t]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lccccc}
+			\hline
+			  & ar1 &    ar2 &    ar3 &    ar4 &   sar1 \\ \hline
+			Coefficient & 0.3850 & 0.1328 & 0.0825  & 0.0167 & 0.4784  \\
+			Standard Error &   0.0793 & 0.0832&  0.0824 & 0.0771  &0.0708   \\
+		\end{tabular}
+	\caption{Summary of model fit for the AR(4) with period 12 seasonal component fit to the monthly count of armed robberies for the South Side.}
+	\end{center}
 \end{table}
 
 \noindent The coefficient estimates for all of the different sides were very similar.  While some sides displayed evidence of higher order autoregressive structure or the addition of moving average terms, as compared to the South Side, all sides had a clear period 12 seasonal component, indicating strong yearly trends for all sides of the city.  The coefficient estimates were positive for the autoregressive terms, indicating that there was a positive correlation between the amount of monthly armed robberies over time.  Plots of the various model fits can be found in \autoref{appendix_regression}.  It is interesting that although the sides of Chicago are quite diverse in terms of population and demographics, as well as the number of monthly armed robberies, the temporal trends for all of the sides are very similar.  Although the count of the monthly armed robberies differs by side of the city, the overall temporal trend is the same across Chicago and has a strong yearly, autoregressive trend.\newline   
 
 \section{Spatial Models}
+
+Intro To Data Spatially 
+- Different Community Areas 
+- Added Variables  (100)
+- What We Want to Predict
+- Why Spatial: Moran's I
+- How Many Data Points
+- Why Armed Robbery 
+- 
+
+LASSO Model
+
+Bayesian Spatial Model
+
+Results + Conclusions
+- Talk about Austin
+- Cancer
+- Residuals Difference
+- Demographics
+- Top Ten Coeffs
+
+- Add Betas in Appendix
+- Add Reference for Data Sources 
+
 
 
 
