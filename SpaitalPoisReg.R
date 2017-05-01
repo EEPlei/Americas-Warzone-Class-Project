@@ -162,12 +162,29 @@ grid.arrange(
 )
 dev.off()
 
+lassoCoef = data.frame(Variable = c("Intercept", Xvars), 
+                       Lasso = coef(uncoolFit, s= 1) %>% 
+                         as.vector())
+lassoCoef = lassoCoef[lassoCoef$Lasso != 0,, drop = F]
 
-coef(uncoolFit, s= 1)
-cis = apply(beta_params, 2, function(x) quantile(x, c(0.025, 0.975))) %>% 
-  t() %>% data.frame(col.names = c("2.5%", "97.5%")) %>% 
-  mutate(IncludeZero = (`2.5%`<=0))
+pdf("lassoCoef.pdf", width = 6, height = 3)
+grid.table(top_n(lassoCoef, 10, wt = Lasso))
+dev.off()
 
-cis = apply(beta_params, 2, function(x) quantile(x, c(0.025, 0.975)))
+
+cis = apply(beta_params, 2, function(x) c(quantile(x, c(0.025, 0.975)),
+                                          mean(x)))
 cis = rbind(cis, IncludeZero = (cis[1,] <= 0) & (cis[2,] >= 0))
+cis = t(cis) %>% data.frame()
+colnames(cis) = c("2.5%", "97.5%", "Spatial", "IncludeZero")
+cis$Variable = c("Intercept", Xvars)
+
+pdf("spatialCoef.pdf", width = 6, height = 3)
+grid.table(cis %>% filter(IncludeZero == 0) %>% 
+             top_n(10, wt = Spatial) %>% 
+             select(Variable, Spatial))
+dev.off()
+
+
+
 
