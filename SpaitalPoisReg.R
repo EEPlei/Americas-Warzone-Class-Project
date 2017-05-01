@@ -121,7 +121,7 @@ armed_robbery_pred$resid %>% .^2 %>% mean() %>% sqrt()
 
 uncoolFit = glmnet(x = X[,-1], y = y , family = "poisson", alpha = 1)
 plot(uncoolFit)
-coef(uncoolFit, s= 1)
+
 
 
 uncool_pred = areas %>% 
@@ -161,3 +161,13 @@ grid.arrange(
   ncol=2
 )
 dev.off()
+
+
+coef(uncoolFit, s= 1)
+cis = apply(beta_params, 2, function(x) quantile(x, c(0.025, 0.975))) %>% 
+  t() %>% data.frame(col.names = c("2.5%", "97.5%")) %>% 
+  mutate(IncludeZero = (`2.5%`<=0))
+
+cis = apply(beta_params, 2, function(x) quantile(x, c(0.025, 0.975)))
+cis = rbind(cis, IncludeZero = (cis[1,] <= 0) & (cis[2,] >= 0))
+
