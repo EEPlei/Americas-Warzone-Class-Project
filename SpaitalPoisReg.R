@@ -185,6 +185,14 @@ grid.table(cis %>% filter(IncludeZero == 0) %>%
              select(Variable, Spatial))
 dev.off()
 
+pdf("allCoef.pdf", width = 12, height = 3)
+grid.table(cbind(cis %>% filter(IncludeZero == 0) %>% 
+                   top_n(10, wt = Spatial) %>% 
+                   select(Variable, Spatial), 
+                 top_n(lassoCoef, 10, wt = Lasso)))
+dev.off()
+
+
 
 
 
