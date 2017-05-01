@@ -41,7 +41,7 @@ if (!file.exists("weightMatrix.Rdata"))
 } else{ load("weightMatrix.Rdata")}
 D = diag(rowSums(W))
 
-X = model.matrix(~scale(dfFull[, !grepl("community area", colnames(dfFull) %>% tolower())]))
+X = model.matrix(~scale(dfFull %>% select(-contains("community area"), -contains("geog"), -contains("armedrobbery"))))
 log_offset = log(dfFull$ArmedRobbery)
 y = dfFull$ArmedRobbery
 morans_I(y = y, w = D %*% W)
@@ -49,10 +49,10 @@ pois_model = "model{
   for(i in 1:length(y)) {
 y[i] ~ dpois(lambda[i])
 y_pred[i] ~ dpois(lambda[i])
-log(lambda[i]) <- log_offset[i] + X[i,] %*% beta + omega[i]
+log(lambda[i]) <-  X[i,] %*% beta + omega[i]
 }
 
-for(i in 1:37) {
+for(i in 1:nCol) {
 beta[i] ~ ddexp(0, rambda)#dnorm(0,1)
 }
 
@@ -63,7 +63,7 @@ phi ~ dunif(0,0.99)
 rambda ~ dunif(0.001, 10)
 }"
 
-if (!file.exists("pois_model.Rdata"))
+if (!file.exists("poisOrig_model.Rdata"))
 {
   m = jags.model(
     textConnection(pois_model), 
@@ -72,7 +72,7 @@ if (!file.exists("pois_model.Rdata"))
       y = y,
       X = X,
       W = W,
-      log_offset = log_offset
+      nCol = ncol(X)
     ),
     n.adapt=10000
   )
@@ -83,9 +83,9 @@ if (!file.exists("pois_model.Rdata"))
     m, variable.names=c("sigma2","tau", "beta", "omega", "phi", "y_pred"),
     n.iter=25000, thin=25
   )
-  save(pois_coda, m, file="pois_model.Rdata")
+  save(pois_coda, m, file="poisOrig_model.Rdata")
 } else {
-  load("pois_model.Rdata")
+  load("poisOrig_model.Rdata")
 }
 
 
