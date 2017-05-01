@@ -5,6 +5,7 @@
 \usepackage{lineno}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{multicol}
 \usepackage[all]{hypcap} 
 %\linenumbers% Uncomment for line numbers
 
@@ -88,10 +89,16 @@ This paper is poop. \newline
 
 \noindent Models were fit to predict the counts of armed robberies in each side between 2003-2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure there was no remaining structure in the resiudals. 
 
+\begin{multicols}{2}
+\begin{figure}[H]
+\includegraphics[width = 80mm]{Plots/south_PACF.png}
+\end{figure}
 
-\new
+\begin{figure}[H]
+\includegraphics[width=80mm]{Plots/south_ACF.png}
+\end{figure}
 
-\subsection{Results}
+\end{multicols}
 
 \newpage
 
