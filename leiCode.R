@@ -49,3 +49,7 @@ graffiti_removal_agg = graffiti_removal %>% group_by(`Community Area`) %>%
 save(graffiti_removal_agg, 
      file = "/home/grad/lsq3/spatio_temp_proj/dataR/graffiti_removal_data.Rdata")
 
+pop = read_excel("/home/grad/lsq3/spatio_temp_proj/data/chicago_pop_data.xlsx", 
+                 col_names = T, skip = 1)
+save(pop, file = "/home/grad/lsq3/spatio_temp_proj/dataR/chicago_pop_data.Rdata")
+

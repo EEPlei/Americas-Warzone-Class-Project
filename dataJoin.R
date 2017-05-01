@@ -8,6 +8,7 @@ load("/home/grad/rkm22/sta644/spatio_temp_proj/dataR/graffiti_removal_data.Rdata
 load("/home/grad/rkm22/sta644/spatio_temp_proj/dataR/public_health_stats_data.Rdata")
 load("/home/grad/rkm22/sta644/spatio_temp_proj/dataR/socioeconomic_indicators_data.Rdata")
 load("/home/grad/rkm22/sta644/spatio_temp_proj/dataR/vacant_prop_data.Rdata")
+load("/home/grad/lsq3/spatio_temp_proj/dataR/chicago_pop_data.Rdata")
 
 # get cleaned armed robbery data #
 source("/home/grad/rkm22/sta644/spatio_temp_proj/armedRobbery.R")
@@ -34,4 +35,5 @@ dfFull = left_join(dfFull,
                    vacantData %>% group_by(`Community Area.y`) %>% summarise(vacantLots = sum(vacantLots)),
                    by = c("Community Area" = "Community Area.y"))
 dfFull[is.na(dfFull)] = 0
+dfFull = left_join(dfFull, pop, by = c("Community Area" = "GeogKey"))
 save(dfFull, file = "full_data_set.Rdata")
