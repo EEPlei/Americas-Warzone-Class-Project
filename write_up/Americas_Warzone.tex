@@ -190,26 +190,74 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 
 \section{Spatial Models}
 
-Intro To Data Spatially 
-- Different Community Areas 
-- Added Variables  (100)
-- What We Want to Predict
-- Why Spatial: Moran's I
-- How Many Data Points
-- Why Armed Robbery 
 
+Intro To Data Spatially - Different Community Areas - Added Variables (100) - What We Want to
+Predict - Why Spatial: Moran?s I - How Many Data Points - Why Armed Robbery
+
+Insert armed robbery counts 
+Insert table of explanatory variables
+
+\subsection{Introduction}
+
+The City of Chicago is comprised of 77 distinct community areas. We predict for counts of armed robbery in each area using a Bayesian Spatial Latent Gaussian Process Poisson Regression Model (BSLGPPR) and a 100 explanatory variables provided by Chicago, \autoref{some table} gathered from a range of years within that of the armed robbery data. We do make the assumption that these variables have not changed much over the next/previous few years and remain applicable. Since we have numerous explanatory variables that range from demographic information to counts of graffiti art, we want to narrow down the number of variables to improve the model?s prediction accuracy and interpretability.  A popular frequentist method is the penalized LASSO regression; however, it does not take into account spatial information. Our model, the BSLGPPR, will simulate a LASSO regression while also modeling spatial random effects. 
+
+\subsection{The LASSO Model}
+\label{lab:LASSO}
+
+Our first model comprises of a simple penalized LASSO regression. Given the positive value of Moran?s I, this model is highly unlikely to outperform one that takes into account the spatial nature of crime. However, we implement this model as a baseline in order to compare to our Bayesian spatial model.
+
+As the data is in counts, we use a Poisson penalized regression model under the assumption of Poisson error.
+
+$$
+\begin{aligned}
+\text{We model its positive mean on the log scale:}&\\
+\log \mu(\mathbf{x}) &= \beta_0+\boldsymbol{\beta}' \mathbf{x}\\
+\text{The log-likelihood for observations } &\{x_i,y_i\}_1^N \text{  is given by:} \\
+l(\boldsymbol{\beta}|\mathbf{X}, \mathbf{Y}) &= \sum_{i=1}^N (y_i (\beta_0+\boldsymbol{\beta}' x_i) - e^{\beta_0+\boldsymbol{\beta}^Tx_i}).\\
+\text{We optimize the penalized log-likelihood:}& \\
+\min_{\beta_0,\boldsymbol{\beta}} -\frac1N l(\boldsymbol{\beta}|\mathbf{X}, \mathbf{Y})  &+ \lambda \frac{1}{2} \left((1-\alpha) \sum_{i=1}^N \beta_i^2) +\alpha \sum_{i=1}^N |\beta_i|\right)\\
+\text{We let } \alpha &= 1\text{ for LASSO regression.}
+\end{aligned}
+$$
+
+
+
+
+\subsection{The Bayesian Spatial Latent Gaussian Process Poisson Regression Model}
+
+Our second model uses a double exponential or Laplace prior to emulate the LASSO penalized regression model as the distribution sharply peaks at zero; concentrating the probability mass at zero. While this prior will not cause our coefficients to go to zero as in the case of a LASSO--instead behaving more like Ridge regression--we get around this by constructing 95 percent credible intervals around the coefficients and finding the ones that contain zero. 
+
+In our Bayesian model, we use the same data as in \autoref{lab:LASSO} and supplement in spatial data in terms of spatial polygons for the 77 areas. 
+
+For our model, we say that:
+
+$$
+\begin{aligned}
+y_i &\sim \text{Poission}(\lambda_i)\\
+\log(\lambda_i) &= \mathbf{X}\boldsymbol{\beta} + \omega_i\\
+\beta_j &\overset{iid}{\sim} \text{Laplace}(0, \eta)\\
+\boldsymbol{\omega} &\sim \text{MVN}(\mathbf{0}, \tau(D -\phi W))\\
+\tau &\sim \text{Gamma}(2,2)\\
+\phi &\sim \text{Unif}(0,0.99)\\
+\eta &\sim \text{Unif}(0.001,10)\\
+\text{where } \{D:d_\{jj\} &= \text{ total number of neighboring community areas for community area j}| j \in 1...77\} \\  
+\text{where } \{W:w_\{jk\} &= \text{whether community area j shares boundaries with community area k}| j,k \in 1...77\}
+\end{aligned}
+$$
+
+Like before, we say that the armed robbery data can be modeled using a Poisson distribution with $\lambda_i$. We know that $\lambda_i$ must be positive, which is why we let it equal to the exponential of $\mathbf{X} \boldsymbol{\beta} + \omega_i$. $\boldsymbol{\beta}$ are the coefficients for each explanatory variable $\mathbf{X}$ and the intercept. We model the random spatial effect by putting a multivariate gaussian prior on $\omega_i$ and setting the mean to zero,we expect the average effect to be 0, and a correlation matrix $\tau(D -\phi W))$, we believe community areas to be affected by neighboring community areas and the total number of neighboring community areas, which is then scaled with $\tau$. We set $\tau$ to have a Gamma(2,2) prior because we believe $\tau$ is positive and also heavily concentrated
+
+\subsection{Results}
+
+
+4 Spatial Models
+Intro To Data Spatially - Different Community Areas - Added Variables (100) - What We Want to
+Predict - Why Spatial: Moran?s I - How Many Data Points - Why Armed Robbery
 LASSO Model
-
 Bayesian Spatial Model
-
-Results + Conclusions
-- Talk about Austin
-- Cancer
-- Residuals Difference
-- Demographics
-- Top Ten Coeffs
-
-- Add Betas in Appendix
+Results + Conclusions - Talk about Austin - Cancer - Residuals Difference - Demographics - Top
+Ten Coeffs
+- Add Betas in Appendix - Add Reference for Data Sources
 - Add Reference for Data Sources 
 
 
