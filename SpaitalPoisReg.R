@@ -148,13 +148,13 @@ pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/results.pdf",
     width = 9, height = 9)
 grid.arrange(
   ggplot(comb_pred) +
-    geom_sf(aes(fill=obs_pred), color=NA) + 
+    geom_sf(aes(fill=obs_pred), color="black") + 
     labs(title="Predicted Cases",fill="") + 
     facet_grid(Regression ~ .) + 
     scale_fill_gradient2(low = "blue", mid = "white", high = "red", 
                         na.value = "grey50", guide = "colourbar", midpoint = 5000),
   ggplot(comb_pred) +
-    geom_sf(aes(fill=resid), color=NA) + 
+    geom_sf(aes(fill=resid), color="black") + 
     labs(title="Residuals",fill="") + 
     facet_grid(Regression ~ .) + 
     scale_fill_gradient2(low = "blue", mid = "white",high = "red", 
