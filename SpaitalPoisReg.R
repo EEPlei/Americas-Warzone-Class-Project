@@ -167,9 +167,9 @@ lassoCoef = data.frame(Variable = c("Intercept", Xvars),
                          as.vector())
 lassoCoef = lassoCoef[lassoCoef$Lasso != 0,, drop = F]
 
-pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/lassoCoef.pdf", width = 6, height = 3)
-grid.table(lassoCoef %>% arrange(desc(abs(Lasso))) %>% `[`(1:10,))
-dev.off()
+# pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/lassoCoef.pdf", width = 6, height = 3)
+# grid.table(lassoCoef %>% arrange(desc(abs(Lasso))) %>% `[`(1:10,))
+# dev.off()
 
 
 cis = apply(beta_params, 2, function(x) c(quantile(x, c(0.025, 0.975)),
@@ -180,16 +180,19 @@ colnames(cis) = c("2.5%", "97.5%", "Spatial", "IncludeZero")
 cis$Variable = c("Intercept", Xvars)
 cis = cis %>% filter(IncludeZero == 0)
 
-pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/spatialCoef.pdf", width = 6, height = 3)
-grid.table(cis %>% arrange(desc(abs(Spatial))) %>% `[`(1:10,) %>% select(Variable, Spatial))
-dev.off()
-
-pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/allCoef.pdf", width = 12, height = 3)
-grid.table(cbind(lassoCoef %>% arrange(desc(abs(Lasso))) %>% `[`(1:10,),
-                 cis %>% arrange(desc(abs(Spatial))) %>% `[`(1:10,) %>% select(Variable, Spatial)))
-dev.off()
-
-
-
-
+# pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/spatialCoef.pdf", width = 6, height = 3)
+# grid.table(cis %>% arrange(desc(abs(Spatial))) %>% `[`(1:10,) %>% select(Variable, Spatial))
+# dev.off()
+# 
+# pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/allCoef.pdf", width = 12, height = 3)
+# grid.table(cbind(lassoCoef %>% arrange(desc(abs(Lasso))) %>% `[`(1:10,),
+#                  cis %>% arrange(desc(abs(Spatial))) %>% `[`(1:10,) %>% select(Variable, Spatial)))
+# dev.off()
+# 
+# 
+cis$IncludeZero = as.logical(cis$IncludeZero)
+xtable(cbind(data.frame(Variable = c("Intercept", Xvars), 
+                        Lasso = coef(uncoolFit, s= 1) %>% 
+                          as.vector()),cis[,1:4])) %>% 
+  print(include.rownames = F)
 

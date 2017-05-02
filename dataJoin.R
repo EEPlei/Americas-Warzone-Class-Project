@@ -22,7 +22,6 @@ dfArmed = dfArmed %>% filter(!(`Case Number` %in% dupes))
 dfArmed = dfArmed %>% group_by(`Community Area`) %>% 
   summarise(ArmedRobbery = n()) 
 
-
 # join new data to armed robbery data #
 dfFull = left_join(dfArmed, avg_elec_usage_agg, by = c("Community Area" = "Community Area"))
 dfFull = left_join(dfFull, avg_gas_usage_agg, by = c("Community Area" = "Community Area"))
@@ -37,3 +36,4 @@ dfFull = left_join(dfFull,
 dfFull[is.na(dfFull)] = 0
 dfFull = left_join(dfFull, pop, by = c("Community Area" = "GeogKey"))
 save(dfFull, file = "full_data_set.Rdata")
+
