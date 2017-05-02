@@ -58,7 +58,7 @@ Megan Robertson\footnotemark[1] \\
 \section{Introduction}
 \label{headings}
 
-\noindent The City of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref10}{[10]} However, other reports conclude that Chicago should not be called the ``crime capital" of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref9}{[9]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
+\noindent The City of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref12}{[12]} However, other reports conclude that Chicago should not be called the ``crime capital" of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref11}{[11]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
 
 \section{Data}
 \label{headings}
@@ -280,8 +280,7 @@ Like before, we say that the armed robbery data can be modeled using a Poisson d
 
 \subsection{Results}
 
-$\boldsymbol{\beta}$ coefficients for the two models can be seen in \autoref{table:betacoef} and \autoref{table:betacoef2} along with 95\% credible intervals for the BSLGPPR model. To summarize, the LASSO model selects 30 variables whereas BSLGPPR selects 15 variables as seen in \autoref{table:lassoBetaNonZero} and \autoref{table:spatialBetaNonZero}. Predictions are also more accurate as seen in \autoref{fig:spatialplots}; the residuals for the BSLGPPR model are minute compared to that of the LASSO model as the LASSO scale would be approximately 100 times wider than that of the BSLGPPR model. While it seems the predictions in comparison to that of other community areas are similar between the two models, it does not change that BSLGPPR is more accurate. Take a community area such as Austin, predicted to have the highest amount of armed robberies for both models, yet the predicted amount differs by approximately 1000 counts--which is very signficant in this context. 
-
+$\boldsymbol{\beta}$ coefficients for the two models can be seen in \autoref{table:betacoef} and \autoref{table:betacoef2} along with 95\% credible intervals for the BSLGPPR model. To summarize, the LASSO model selects 30 variables whereas BSLGPPR selects 15 variables as seen in \autoref{table:lassoBetaNonZero} and \autoref{table:spatialBetaNonZero}. Predictions are also more accurate as seen in \autoref{fig:spatialplots}; the residuals for the BSLGPPR model are minute compared to that of the LASSO model as the LASSO scale would be approximately 100 times wider than that of the BSLGPPR model. While it seems the predictions in comparison to that of other community areas are similar between the two models, it does not change that BSLGPPR is more accurate. Take a community area such as Austin, predicted to have the highest amount of armed robberies for both models, yet the predicted amount differs by approximately 1000 counts--which is very significant in this context. 
 
 \begin{table}[h]
 \centering
@@ -365,45 +364,43 @@ Intercept & 6.5489 \\
 \end{figure}
 \end{center}
 
-%4 Spatial Models
-%Intro To Data Spatially - Different Community Areas - Added Variables (100) - What We Want to
-%Predict - Why Spatial: Moran?s I - How Many Data Points - Why Armed Robbery
-%LASSO Model
-%Bayesian Spatial Model
-%Results + Conclusions - Talk about Austin - Cancer - Residuals Difference - Demographics - Top
-%Ten Coeffs
-%- Add Betas in Appendix - Add Reference for Data Sources
-%- Add Reference for Data Sources 
+\subsection{Conclusion}
 
-
-
-
-
+Examining our coefficients, given the much lower RMSE value for our BSLGPPR model, and the spatial nature of the data, it makes sense to only consider these coefficients. In particular, we note that there is a strong negative relationship between the number of females between 10 to 14 years. One potential hypothesis for this is that families with younger female children are more likely to live in safe neighborhoods or gated communities. It is also interesting to note that the rate of cancer has a high positive relationship with the number of armed robberies. In Chicago, many of the industrial areas surrounding Lake Michigan have are polluted with heavy metals, often leading to higher rates of cancer. \hyperlink{Ref1}{[1]}Finally, we note that unemployment appears to have a negative relationship with the number of armed robberies. This definitely warrants further investigation. One possible explanation is that the rate of unemployment only includes those that are actively seeking work. \hyperlink{Ref10}{[10]} As a result, many of the poorest neighborhoods in Chicago do not have particularly high unemployment rates because there simply are not enough jobs to go around, and with high levels of gang activity, anyone in a gang is unlikely to be counted as unemployed. While it is not possible to determine a causal relationship from this model, further work would explore potential naturally occurring controlled experiments to determine causality.  For example, if we find a relationship between crime and pollution levels, policies within community areas that reduce the levels of pollution could be used to explore the changes in crime rates with these changes in pollution levels. Further work will explore these type of controlled experiments based on the most important features found through our spatial model.
 
 \clearpage\newpage
 
 
 \subsubsection*{References}
 
-\hypertarget{Ref1}{[1]} City of Chicago, ``Affordable Rental Housing Developments", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Community-Economic-Development/Affordable-Rental-Housing-Developments/s6ha-ppgi}, May 2017.
+\hypertarget{Ref1}{[1]} Bukro, Casey. \textit{Industrial Area Showing High Incidence of Cancer}. Chicago Tribune. \url{http://articles.chicagotribune.com/1986-03-15/news/8601190592_1_bladder-cancer-cancer-deaths-bladder-and-prostate}. March,1986.
 
-\hypertarget{Ref2}{[2]} City of Chicago, ``Average Gas Usage per Square Foot by Community Area 2010", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Graffiti-Removal/hec5-y4x5}, May 2017.
+\hypertarget{Ref2}{[2]} City of Chicago. \textit{Affordable Rental Housing Developments.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Community-Economic-Development/Affordable-Rental-Housing-Developments/s6ha-ppgi}. May 2017.
 
-\hypertarget{Ref3}{[3]} City of Chicago, ``Census Data - Selected socioeconomic indicators in Chicago, 2008 – 2012", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2}, May 2017.
+\hypertarget{Ref3}{[3]} City of Chicago. \textit{Average Gas Usage per Square Foot by Community Area 2010.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Graffiti-Removal/hec5-y4x5}. May 2017.
 
-\hypertarget{Ref4}{[4]} City of Chicago, ``Public Health Statistics- Selected public health indicators by Chicago community area", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu}, May 2017.
+\hypertarget{Ref4}{[4]} City of Chicago. \textit{Selected socioeconomic indicators in Chicago, 2008 to 2012}. City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Health-Human-Services/Census-Data-Selected-socioeconomic-indicators-in-C/kn9c-c2s2}. May 2017.
 
-\hypertarget{Ref5}{[5]} City of Chicago, ``Public Safety: Crimes 2001 to Present", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Public-Safety/ Crimes-2001-to-present/ijzp-q8t2/data}, May 2017.
 
-\hypertarget{Ref6}{[6]} City of Chicago, ``Vacant Properties by Community Area", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Community-Economic-Development/Vacant-Properties-by-Community-Area/cjr7-qyw5}, May 2017.
+\hypertarget{Ref5}{[5]} City of Chicago. \textit{Public Health Statistics- Selected public health indicators by Chicago community area.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu}. May 2017.
 
-\hypertarget{Ref7}{[7]} City of Chicago, ``311 Service Requests - Graffiti Removal", \textit{City of Chicago Open Data Project}, \url{https://data.cityofchicago.org/Environment-Sustainable-Development/Average-Gas-Usage-per-Square-Foot-by-Community-Are/jp7r-k6h2}, May 2017.
 
-\hypertarget{Ref8}{[8]} CMAP Data Hub, ``2010 Census Data Summarized to Chicago Community Area", \textit{Chicago Metropolitan Agency for Planning}, \url{https://datahub.cmap.illinois.gov/dataset/2010-census-data-summarized-to-chicago-community-areas/resource/b30b47bf-bb0d-46b6-853b-47270fb7f626?inner_span=True}, May 2017.
+\hypertarget{Ref6}{[6]} City of Chicago. \textit{Public Safety: Crimes 2001 to Present.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Public-Safety/ Crimes-2001-to-present/ijzp-q8t2/data}. May 2017.
 
-\hypertarget{Ref9}{[9]} Papachristos, Andrew V., ``48 Years of Crime in Chicago: An Analysis of of Serious Crime Trends from 1965-2013", \url{http://isps.yale.edu/sites/default/files/publication/2013/12/48yearsofcrime_final_ispsworkingpaper023.pdf}, December 2013.
 
-\hypertarget{Ref10}{[10]} Pearson, Rick, ``Trump Again Assails Chicago gun violence in speech to Congress", \textit{Chicago Tribune}, \url{http://www.chicagotribune.com/news/local/politics/ct-donald-trump-congress-speech-chicago-met-20170228-story.html}, March 2017.
+\hypertarget{Ref7}{[7]} City of Chicago. \textit{Vacant Properties by Community Area.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Community-Economic-Development/Vacant-Properties-by-Community-Area/cjr7-qyw5}. May 2017.
+
+\hypertarget{Ref8}{[8]} City of Chicago. \textit{311 Service Requests Graffiti Removal.} City of Chicago Open Data Project. \url{https://data.cityofchicago.org/Environment-Sustainable-Development/Average-Gas-Usage-per-Square-Foot-by-Community-Are/jp7r-k6h2}. May, 2017.
+
+
+\hypertarget{Ref9}{[9]} CMAP Data Hub. \textit{2010 Census Data Summarized to Chicago Community Area.} Chicago Metropolitan Agency for Planning. \url{https://datahub.cmap.illinois.gov/dataset/2010-census-data-summarized-to-chicago-community-areas/resource/b30b47bf-bb0d-46b6-853b-47270fb7f626?inner_span=True}. May, 2017.
+
+
+\hypertarget{Ref10}{[10]} Komlos, John. \textit{How Natural is the Natural Rate of Unemployment.} SSRN. \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2512718}. October, 2014.
+
+\hypertarget{Ref11}{[11]} Papachristos, Andrew V.. \textit{48 Years of Crime in Chicago: An Analysis of of Serious Crime Trends from 1965-2013.} CESifo. \url{http://isps.yale.edu/sites/default/files/publication/2013/12/48yearsofcrime_final_ispsworkingpaper023.pdf}. December, 2013.
+
+\hypertarget{Ref12}{[12]} Pearson, Rick. \textit{Trump Again Assails Chicago gun violence in speech to Congress}. Chicago Tribune. \url{http://www.chicagotribune.com/news/local/politics/ct-donald-trump-congress-speech-chicago-met-20170228-story.html}. March, 2017.
 
 
 \clearpage
