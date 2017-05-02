@@ -63,7 +63,9 @@ Megan S. Robertson\footnotemark[1] \\
 \section{Data}
 \label{headings}
 
-\noindent The crime data used for this project came from the City of Chicago's website. \footnote{Crimes 2001 to present, \url{https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2/data}} The data contained every reported crime in Chicago from 2001 to the present (\autoref{data}). In addition to the type of crime reported (battery, assault, etc.), there was information on the location and time of the crime. The data set was reduced to only consider armed robberies, which we define to be robberies committed with a gun or another type of firearm. 
+\noindent The crime data used for this project came from the City of Chicago's website. The data contained every reported crime in Chicago from 2001 to the present (\autoref{data}). \hyperref{Ref5}{[5]} In addition to the type of crime reported (battery, assault, etc.), there was information on the location and time of the crime. The data set was reduced to only consider armed robberies, which we define to be robberies committed with a gun or another type of firearm. \newline 
+
+\noindent The information in the data comes from the Citizen Law Enforcement and Analysis and Reporting (CLEAR) system. The iformation is based on what is supplied by the individuals reporting the crimes and thus may not be accurate. In addition, there is a potential for human error when entering the crimes. The data provides block level information to protect the privacy and identity of those involved in crimes.\hyperref{Ref5}{[5]} \newline
 
 % \begin{figure}[h]
 % \begin{center}
@@ -106,6 +108,7 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 \label{data}
 \end{table}
 
+\noindent Additional data sources were used for co-variates in the contruction of models. These included Affordable Rental Housing Developments, Census Data – Selected socioeconomic indicators, Average Electricity Usage, Average Gas Usage per Square Foot by Community Area, 311 Service Requests – Graffiti Removal, Public Health Statistics, and Vacant Properties by Community Area. \hyperref{Ref5}{[5]} The data can be found on the same website as the Chicago Crime Data. Data from the 2010 census was also used for additional data. \hyperref{Ref3}{[3]} The additional data is used to provide more information about the characteristics of Chicago neighborhoods. For example, socioeconomic indicators are related to crime rate since more crimes tend to occur in lower income neighborhoods. More vacant properties could indicate that the area is neglected or run down.
 
 
 \section{Time Series Analysis}
@@ -387,6 +390,12 @@ Intercept & 6.5489 \\
 \hypertarget{Ref1}{[1]} Papachristos, Andrew V., "48 Years of Crime in Chicago: An Analysis of of Serious Crime Trends from 1965-2013,\url{http://isps.yale.edu/sites/default/files/publication/2013/12/48yearsofcrime_final_ispsworkingpaper023.pdf}, December 2013.
 
 \hypertarget{Ref2}{[2]} Pearson, Rick, "Trump Again Assails Chicago gun violence in speech to Congress", \textit{Chicago Tribune}, \url{http://www.chicagotribune.com/news/local/politics/ct-donald-trump-congress-speech-chicago-met-20170228-story.html}, March 2017.
+
+\hypertarget{Ref3}{[3]} CMAP Data Hub, \url{https://datahub.cmap.illinois.gov/}
+
+\hypertarget{Ref4}{[4]} Hyndman, R. J and Anthanasopoulos, G. ``Forecasting: Principles and Practice."  O-Texts. 2012.
+
+\hypertarget{Ref5}{[5]} Chicago Data Portal, City of Chicago, \url{https://data.cityofchicago.org/}.
 
 
 \clearpage
