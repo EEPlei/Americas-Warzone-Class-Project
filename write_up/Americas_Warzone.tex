@@ -58,7 +58,7 @@ Megan S. Robertson\footnotemark[1] \\
 \section{Introduction}
 \label{headings}
 
-\noindent The City of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports conclude that Chicago should not be called the crime capital?? of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref1}{[1]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
+\noindent The City of Chicago is frequently listed as one of the most dangerous and crime-ridden cities in the US. President Donald Trump frequently discusses the high-rate of crime in Chicago. According to the Chicago Tribune, there were 4,367 shooting victims in Chicago in 2016. In the same year there were also 785 homicides.\hyperlink{Ref2}{[2]} However, other reports conclude that Chicago should not be called the ``crime capital" of America, as Chicago's violence rate is lower than cities like St.  Louis and Detroit. \hyperlink{Ref1}{[1]} The goal of this project was to examine crime in Chicago, specifically armed robberies, from 2012-2016. \newline
 
 \section{Data}
 \label{headings}
@@ -127,7 +127,7 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 \begin{center}
 
 \includegraphics[width=0.8\textwidth,keepaspectratio]{Plots/population.png}
-\caption{The population distribution of the  ``sides" of Chicago.  The borders correspond to  the boundaries of the community areas colored by the side.}
+\caption{The population distribution of the  ``sides" of Chicago.  The borders correspond to  the boundaries of the community areas.}
 \label{population}
 \end{center}
 \end{figure}
@@ -136,27 +136,26 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 \begin{center}
 
 \includegraphics[width=0.8\textwidth,keepaspectratio]{Plots/counts_by_pop.png}
-\caption{The number of armed robberies per capita for the ``sides" of Chicago between 2003 and 2016.  The borders correspond to  the boundaries of the community areas colored by the side.}
+\caption{The number of armed robberies per capita for the ``sides" of Chicago between 2003 and 2016.  The borders correspond to  the boundaries of the community areas.}
 \label{counts}
 \end{center}
 \end{figure}
 
-\noindent ARIMA models were fit to predict the counts of monthly armed robberies in each side of the city between 2003 and 2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure that there was no remaining structure in the residuals. The PACF and ACF plots for the data from the South Side are displayed below. The ACF plot showed evidence of seasonality at lag 12 (i.e. yearly trends). After lag 1, there was no large values for the PACF, so no moving average terms were included in the model. \newline
-
-\break 
+\noindent ARIMA models were fit to predict the counts of monthly armed robberies in each side of the city between 2003 and 2016. In order to determine the type of model, the ACF and PACF plots were examined for the data for each of the sides. For example, if there was structure in the PACF plot beyond one lag, moving average terms were added. The model residuals were also examined to ensure that there was no remaining structure in the residuals. The PACF and ACF plots for the data from the South Side are displayed below. The ACF plot showed evidence of seasonality at lag 12 (i.e. yearly trends). After lag 1, there was no large values for the PACF, so no moving average terms were included in the model. \newline\newline\newline
+\clearpage\newpage
 \begin{multicols}{2}
 \begin{figure}[H]
-\includegraphics[width=70mm]{Plots/south_ACF.png}
+\includegraphics[height=50mm, width=80mm]{Plots/south_ACF.png}
 \caption{ACF plot for the number of monthly armed robberies in the South Side of Chicago between 2003 and 2016.}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[width=70mm]{Plots/south_PACF.png}
+\includegraphics[height=50mm, width=80mm]{Plots/south_PACF.png}
 \caption{PACF plot for the number of monthly armed robberies in the South Side of Chicago between 2003 and 2016.}
 \end{figure}
 \end{multicols}
 
-\noindent Based on the ACF \autoref{south_resid_ACF} and PACF \autoref{south_resid_PACF} plots, an AR(4) model was fit with a seasonal component with period twelve. The residuals plot for this model did not display any remaining structure in the data and the coefficients are in \autoref{south_coef}. 
+\noindent Based on the ACF \autoref{south_resid_ACF} and PACF \autoref{south_resid_PACF} plots, an AR(4) model was fit with a seasonal component with period twelve. The residuals plot for this model did not display any remaining structure in the data and the coefficients are in \autoref{south_coef}.\newline\newline 
 
 \begin{multicols}{2}
 \begin{figure}[H]
@@ -173,7 +172,7 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 \end{multicols}
 
 
-\begin{table}[t]
+\begin{table}[h]
 	\label{tab:data}
 	\begin{center}
 	\begin{tabular}{lccccc}
@@ -184,9 +183,11 @@ HN180091 & 02/16/2007 03:20:00 PM & 012XX W 103RD ST & OTHER WEAPONS VIOLATION &
 		\end{tabular}
 	\caption{Summary of model fit for the AR(4) with period 12 seasonal component fit to the monthly count of armed robberies for the South Side.}
 	\end{center}
+	\label{south_coef}
 \end{table}
 
 \noindent The coefficient estimates for all of the different sides were very similar.  While some sides displayed evidence of higher order autoregressive structure or the addition of moving average terms, as compared to the South Side, all sides had a clear period 12 seasonal component, indicating strong yearly trends for all sides of the city.  The coefficient estimates were positive for the autoregressive terms, indicating that there was a positive correlation between the amount of monthly armed robberies over time.  Plots of the various model fits can be found in \autoref{appendix_regression}.  It is interesting that although the sides of Chicago are quite diverse in terms of population and demographics, as well as the number of monthly armed robberies, the temporal trends for all of the sides are very similar.  Although the count of the monthly armed robberies differs by side of the city, the overall temporal trend is the same across Chicago and has a strong yearly, autoregressive trend.\newline   
+
 
 \section{Spatial Models}
 
@@ -362,22 +363,22 @@ Intercept & 6.5489 \\
 \end{figure}
 \end{center}
 
-4 Spatial Models
-Intro To Data Spatially - Different Community Areas - Added Variables (100) - What We Want to
-Predict - Why Spatial: Moran?s I - How Many Data Points - Why Armed Robbery
-LASSO Model
-Bayesian Spatial Model
-Results + Conclusions - Talk about Austin - Cancer - Residuals Difference - Demographics - Top
-Ten Coeffs
-- Add Betas in Appendix - Add Reference for Data Sources
-- Add Reference for Data Sources 
+%4 Spatial Models
+%Intro To Data Spatially - Different Community Areas - Added Variables (100) - What We Want to
+%Predict - Why Spatial: Moran?s I - How Many Data Points - Why Armed Robbery
+%LASSO Model
+%Bayesian Spatial Model
+%Results + Conclusions - Talk about Austin - Cancer - Residuals Difference - Demographics - Top
+%Ten Coeffs
+%- Add Betas in Appendix - Add Reference for Data Sources
+%- Add Reference for Data Sources 
 
 
 
 
 
 
-\newpage
+\clearpage\newpage
 
 
 \subsubsection*{References}
@@ -399,7 +400,10 @@ Ten Coeffs
 \label{appendix_regression}
 
  
-\subsubsection{West Side}
+\subsubsection{West Side - ARIMA(2,0,0) x (1,0,0)[12]}
+ 
+
+ 
  
 \begin{multicols}{2}
  \begin{figure}[H]
@@ -417,17 +421,33 @@ Ten Coeffs
 \begin{figure}[H]
 \includegraphics[height=50mm, width=80mm]{Plots/west_resids_PACF.png}
 \end{figure}
- \end{multicols}
- 
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/west_resids.png}
-\end{figure}
-\end{center}
- 
 
  
-\subsubsection{Southwest Side}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/west_resids.png}
+%\end{figure}
+%\end{center}
+ \end{multicols}
+
+ \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lcccc}
+			\hline
+			&           ar1  &   ar2  &  sar1    \\\hline
+Coefficient   &   0.5742 & 0.0329&  0.5735  \\
+Standard Error & 0.0791&  0.0796 & 0.0643    \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(2) with period 12 seasonal component fit to the monthly count of armed robberies for the West Side.}
+	\end{center}
+\end{table}
+
+
+
+ \break
+ \newpage
+\subsubsection{Southwest Side - ARIMA(12,0,0) x (1,0,0)[12]}
  
 \begin{multicols}{2}
  
@@ -449,14 +469,36 @@ Ten Coeffs
  
 \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/southwest_resid.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/southwest_resid.png}
+%\end{figure}
+%\end{center}
+ 
+  \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lcccccccc}
+			\hline
+      &   ar1  &   ar2    &  ar3  &   ar4 &    ar5   &  ar6  &    ar7    \\\hline
+ Coefficient &      0.3718 & 0.2471 & -0.0041  & 0.1178 &  0.0534 &  0.0521 & -0.0722 \\
+ Standard Error & 0.0861 & 0.0791&   0.0837 & 0.0811 & 0.0829&  0.0844  & 0.0820 \\\hline
+& & ar8 &  ar9  &   ar10  &  ar11  &   ar12   & sar1 \\\hline
+Coefficient &  & -0.0419 & 0.0943  & -0.0330  &0.1937 & -0.3336  & 0.6148\\
+Standard Error &  & 0.0819 & 0.0810  & 0.0827&  0.0843 &  0.0978  &0.1077\\
+		\end{tabular}
+	\caption{Summary of model fit for the AR(12) with period 12 seasonal component fit to the monthly count of armed robberies for the Southwest Side.}
+	\end{center}
+\end{table}
+
+
+
+ \break
+ \newpage
  
  
-\subsubsection{Southeast Side}
+ 
+\subsubsection{Far Southeast Side - ARIMA(12,0,0) x (1,0,0)[12]}
  
 \begin{multicols}{2}
  
@@ -478,15 +520,36 @@ Ten Coeffs
  
 \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/southeast_resid.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/southeast_resid.png}
+%\end{figure}
+%\end{center}
 
+   \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lcccccccc}
+			\hline
+      &   ar1  &   ar2    &  ar3  &   ar4 &    ar5   &  ar6  &    ar7    \\\hline
+ Coefficient &       0.3841 & 0.0168&  -0.0954 & 0.1271 & 0.1040 & -0.1575  & -0.0059 \\
+ Standard Error & 0.0742 &  0.0832 &  0.0797  &0.0800 & 0.0796 &  0.0791 &  0.0815 \\\hline
+& & ar8 &  ar9  &   ar10  &  ar11  &   ar12   & sar1 \\\hline
+Coefficient &  & 0.0193 & 0.0552 & -0.0223&  0.2122 &  0.2868  &-0.0748\\
+Standard Error &  & 0.0802 & 0.0837  & 0.0795 & 0.0827 & 0.1119 &  0.1373\\
+		\end{tabular}
+	\caption{Summary of model fit for the AR(12) with period 12 seasonal component fit to the monthly count of armed robberies for the Far Southeast Side.}
+	\end{center}
+\end{table}
+
+
+
+
+
+ \break
+ \newpage
  
- 
-\subsubsection{Northwest Side}
+\subsubsection{Northwest Side - ARIMA(3,0,0) x (1,0,0)[12]}
  
 \begin{multicols}{2}
  \begin{figure}[H]
@@ -506,15 +569,30 @@ Ten Coeffs
 \end{figure}
  \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/northwest_resids.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/northwest_resids.png}
+%\end{figure}
+%\end{center}
  
+ \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lccccc}
+			\hline
+			&           ar1  &   ar2  & ar3 &   sar1    \\\hline
+Coefficient   &   0.4330  &0.1290 & 0.0021&  0.0169  \\
+Standard Error & 0.0798 & 0.0842 & 0.0782 & 0.0848   \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(3) with period 12 seasonal component fit to the monthly count of armed robberies for the Northwest Side.}
+	\end{center}
+\end{table}
+
+ \break
+ \newpage
 
  
-\subsubsection{North Side}
+\subsubsection{North Side - ARIMA(3,0,0) x (1,0,0)[12]}
  
 \begin{multicols}{2}
  \begin{figure}[H]
@@ -534,15 +612,29 @@ Ten Coeffs
 \end{figure}
  \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/north_residuals.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/north_residuals.png}
+%\end{figure}
+%\end{center}
  
+ \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lccccc}
+			\hline
+			&           ar1  &   ar2  & ar3 &   sar1    \\\hline
+Coefficient   &   0.2810 &  0.2050 & 0.0014 & 0.2441  \\
+Standard Error & 0.0825 & 0.0816 & 0.0809 & 0.0871 \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(3) with period 12 seasonal component fit to the monthly count of armed robberies for the North Side.}
+	\end{center}
+\end{table}
 
+ \break
+ \newpage
  
-\subsubsection{Far Southwest Side}
+\subsubsection{Far Southwest Side - ARIMA(5,0,0) x (1,0,0)[12]}
 \begin{multicols}{2} 
 \begin{figure}[H]
 \includegraphics[height=50mm, width=80mm]{Plots/far_southwest_acf.png}
@@ -562,15 +654,29 @@ Ten Coeffs
  
 \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_resid.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/far_southwest_resid.png}
+%\end{figure}
+%\end{center}
  
+ \begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lccccccc}
+			\hline
+			&           ar1  &   ar2  & ar3 & ar4 & ar5 &  sar1    \\\hline
+Coefficient   &    0.3477  &-0.0629 & 0.2363 & 0.0084  &0.0928 & 0.3577   \\
+Standard Error & 0.0825  & 0.0825 & 0.0823 & 0.0821 & 0.0774  & 0.0819 \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(5) with period 12 seasonal component fit to the monthly count of armed robberies for the Far Southwest Side.}
+	\end{center}
+\end{table}
 
+ \break
+ \newpage
  
-\subsubsection{Far North Side}
+\subsubsection{Far North Side - ARIMA(3,0,0) x (1,0,0)[12]}
  
 \begin{multicols}{2} 
 \begin{figure}[H]
@@ -590,15 +696,32 @@ Ten Coeffs
 \end{figure}
  \end{multicols}
  
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/far_north_resids.png}
-\end{figure}
- \end{center}
+%\begin{center}
+%\begin{figure}[H]
+%\includegraphics[height=50mm, width=80mm]{Plots/far_north_resids.png}
+%\end{figure}
+% \end{center}
  
+\begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lccccc}
+			\hline
+			&           ar1  &   ar2  & ar3 &   sar1    \\\hline
+Coefficient   &    0.3000 & 0.1374 & 0.0190 & 0.2987  \\
+Standard Error &  0.0823 & 0.0805 & 0.0781 & 0.0848  \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(3) with period 12 seasonal component fit to the monthly count of armed robberies for the Far North Side.}
+	\end{center}
+\end{table}
 
+ \break
+ \newpage
  
-\subsubsection{Central}
+ 
+ 
+ 
+\subsubsection{Central - ARIMA(2,0,0) x (1,0,0)[12]}
  \begin{multicols}{2}
 \begin{figure}[H]
 \includegraphics[height=50mm, width=80mm]{Plots/Central_ACF.png}
@@ -617,11 +740,28 @@ Ten Coeffs
 \end{figure}
  \end{multicols}
 
-\begin{center}
-\begin{figure}[H]
-\includegraphics[height=50mm, width=80mm]{Plots/Central_residuals.png}
-\end{figure}
-\end{center}
+%\begin{center}
+%\begin{figure}[h]
+%\includegraphics[height=50mm, width=80mm]{Plots/Central_residuals.png}
+%\end{figure}
+%\end{center}
+
+
+\begin{table}[h]
+	\label{tab:data}
+	\begin{center}
+	\begin{tabular}{lcccc}
+			\hline
+			&           ar1  &   ar2  &    sar1    \\\hline
+Coefficient   &    0.3372  & 0.1944 & 0.2026  \\
+Standard Error &  0.0793  & 0.0773 & 0.0921 \\ 
+		\end{tabular}
+	\caption{Summary of model fit for the AR(2) with period 12 seasonal component fit to the monthly count of armed robberies for the Central Side.}
+	\end{center}
+\end{table}
+
+ 
+
 
 \subsection{Spatial Analysis}
 \label{appendix_spatial}
@@ -701,6 +841,23 @@ Intercept & 6.5489 & 6.2136 & 6.2683 & 6.2427 & FALSE \\
   Male: 75 to 79 years & 0.0000 & -0.2765 & 0.1980 & -0.0323 & TRUE \\ 
   Male: 80 to 84 years & 0.0000 & -0.1820 & 0.1216 & -0.0021 & TRUE \\ 
   Male: 85 years and over & 0.0000 & -0.1266 & 0.2376 & 0.0535 & TRUE \\ 
+    \hline
+\end{tabular}
+
+\end{adjustbox}
+\caption{Beta Coefficients for LASSO and BSLGPPR Models.}
+\label{table:betacoef}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{adjustbox}{width = \textwidth}
+\begin{tabular}{cccccc}
+  \hline
+Variable & Lasso & 2.5\% & 97.5\% & Spatial & IncludeZero \\ 
+  \hline
   Female: Under 5 years old & 0.0000 & -0.0854 & 0.3244 & 0.0571 & TRUE \\ 
   Female: 5 to 9 years & 0.0642 & -0.2919 & 0.4038 & 0.0265 & TRUE \\ 
   Female: 10 to 14 years & 0.0000 & -0.9097 & -0.1008 & -0.4947 & FALSE \\ 
@@ -738,8 +895,8 @@ Intercept & 6.5489 & 6.2136 & 6.2683 & 6.2427 & FALSE \\
 \end{tabular}
 
 \end{adjustbox}
-\caption{Beta Coefficients for LASSO and BSLGPPR Models}
-\label{table:betacoef}
+\caption{Beta Coefficients for LASSO and BSLGPPR Models, continued.}
+\label{table:betacoef2}
 \end{table}
 
 \end{document}
