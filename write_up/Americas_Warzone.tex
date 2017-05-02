@@ -278,7 +278,7 @@ Like before, we say that the armed robbery data can be modeled using a Poisson d
 
 \subsection{Results}
 
-$\boldsymbol{\beta}$ coefficients for the two models can be seen in \autoref{table:betacoef} along with 95\% credible intervals for the BSLGPPR model. To summarize, the LASSO model selects 30 variables whereas BSLGPPR selects 15 variables as seen in \autoref{table:lassoBetaNonZero} and \autoref{table:spatialBetaNonZero}. Predictions are also more accurate as seen in \autoref{fig:spatialplots}; the residuals for the BSLGPPR model are minute compared to that of the LASSO model as the LASSO scale would be approximately 100 times wider than that of the BSLGPPR model. While it seems the predictions in comparison to that of other community areas are similar between the two models, it does not change that BSLGPPR is more accurate. Take a community area such as Austin, predicted to have the highest amount of armed robberies for both models, yet the predicted amount differs by approximately 1000 counts--which is very signficant in this context. 
+$\boldsymbol{\beta}$ coefficients for the two models can be seen in \autoref{table:betacoef} and \autoref{table:betacoef2} along with 95\% credible intervals for the BSLGPPR model. To summarize, the LASSO model selects 30 variables whereas BSLGPPR selects 15 variables as seen in \autoref{table:lassoBetaNonZero} and \autoref{table:spatialBetaNonZero}. Predictions are also more accurate as seen in \autoref{fig:spatialplots}; the residuals for the BSLGPPR model are minute compared to that of the LASSO model as the LASSO scale would be approximately 100 times wider than that of the BSLGPPR model. While it seems the predictions in comparison to that of other community areas are similar between the two models, it does not change that BSLGPPR is more accurate. Take a community area such as Austin, predicted to have the highest amount of armed robberies for both models, yet the predicted amount differs by approximately 1000 counts--which is very signficant in this context. 
 
 
 \begin{table}[h]
@@ -824,7 +824,25 @@ Intercept & 6.5489 & 6.2136 & 6.2683 & 6.2427 & FALSE \\
   Male: 15 to 17 years & 0.0000 & -0.3138 & 0.2186 & 0.0197 & TRUE \\ 
   Male: 18 and 19 years & 0.0000 & -0.0289 & 0.7760 & 0.3415 & TRUE \\ 
   Male: 20 years & 0.0000 & -0.0030 & 0.3619 & 0.1537 & TRUE \\ 
-  Male: 21 years & 0.0000 & -0.3656 & 0.1339 & -0.0838 & TRUE \\ 
+
+    \hline
+\end{tabular}
+
+\end{adjustbox}
+\caption{Beta Coefficients for LASSO and BSLGPPR Models.}
+\label{table:betacoef}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{adjustbox}{width = 0.8\textwidth}
+\begin{tabular}{cccccc}
+  \hline
+Variable & Lasso & 2.5\% & 97.5\% & Spatial & IncludeZero \\ 
+  \hline
+    Male: 21 years & 0.0000 & -0.3656 & 0.1339 & -0.0838 & TRUE \\ 
   Male: 22 to 24 years & 0.0000 & -0.1454 & 0.3723 & 0.0717 & TRUE \\ 
   Male: 25 to 29 years & 0.0000 & -0.1612 & 0.4841 & 0.1711 & TRUE \\ 
   Male: 30 to 34 years & 0.0000 & -0.4044 & 0.1591 & -0.0959 & TRUE \\ 
@@ -841,23 +859,6 @@ Intercept & 6.5489 & 6.2136 & 6.2683 & 6.2427 & FALSE \\
   Male: 75 to 79 years & 0.0000 & -0.2765 & 0.1980 & -0.0323 & TRUE \\ 
   Male: 80 to 84 years & 0.0000 & -0.1820 & 0.1216 & -0.0021 & TRUE \\ 
   Male: 85 years and over & 0.0000 & -0.1266 & 0.2376 & 0.0535 & TRUE \\ 
-    \hline
-\end{tabular}
-
-\end{adjustbox}
-\caption{Beta Coefficients for LASSO and BSLGPPR Models.}
-\label{table:betacoef}
-\end{table}
-
-
-
-\begin{table}[H]
-\centering
-\begin{adjustbox}{width = \textwidth}
-\begin{tabular}{cccccc}
-  \hline
-Variable & Lasso & 2.5\% & 97.5\% & Spatial & IncludeZero \\ 
-  \hline
   Female: Under 5 years old & 0.0000 & -0.0854 & 0.3244 & 0.0571 & TRUE \\ 
   Female: 5 to 9 years & 0.0642 & -0.2919 & 0.4038 & 0.0265 & TRUE \\ 
   Female: 10 to 14 years & 0.0000 & -0.9097 & -0.1008 & -0.4947 & FALSE \\ 
