@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,13 +1023,13 @@ Package pdftex.def Info: Plots/results.pdf used on input line 362.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.383 \clearpage
-                \newpagepdfTeX warning (ext4): destination with the same identi
-fier (name{table.4}) has been already used, duplicate ignored
+                \newpage] [8pdfTeX warning (ext4): destination with the same id
+entifier (name{table.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.383 \clearpage
-                \newpage] [8pdfTeX warning (ext4): destination with the same id
+                \newpage] [9pdfTeX warning (ext4): destination with the same id
 entifier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1198,9 +1198,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--407
 228-[]story . html$[][]\OT1/ptm/m/n/10 ,
  []
 
-[9
+[10
 
-] <Plots/West_ACF.png, id=233, 476.53032pt x 207.77625pt>
+] <Plots/West_ACF.png, id=237, 476.53032pt x 207.77625pt>
 File: Plots/West_ACF.png Graphic file (type png)
 
 <use Plots/West_ACF.png>
@@ -1211,7 +1211,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 427--428
 [][] 
  []
 
-<Plots/West_PACF.png, id=234, 476.53032pt x 207.77625pt>
+<Plots/West_PACF.png, id=238, 476.53032pt x 207.77625pt>
 File: Plots/West_PACF.png Graphic file (type png)
 
 <use Plots/West_PACF.png>
@@ -1222,7 +1222,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 431--432
 [][] 
  []
 
-<Plots/west_resids_ACF.png, id=235, 476.53032pt x 207.77625pt>
+<Plots/west_resids_ACF.png, id=239, 476.53032pt x 207.77625pt>
 File: Plots/west_resids_ACF.png Graphic file (type png)
 
 <use Plots/west_resids_ACF.png>
@@ -1233,7 +1233,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 435--436
 [][] 
  []
 
-<Plots/west_resids_PACF.png, id=236, 476.53032pt x 207.77625pt>
+<Plots/west_resids_PACF.png, id=240, 476.53032pt x 207.77625pt>
 File: Plots/west_resids_PACF.png Graphic file (type png)
 
 <use Plots/west_resids_PACF.png>
@@ -1247,7 +1247,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 439--440
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10
+ [11
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
@@ -1257,7 +1257,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
 l.465  \break
               <./Plots/West_ACF.png (PNG copy)> <./Plots/West_PACF.png (PNG cop
 y)> <./Plots/west_resids_ACF.png (PNG copy)> <./Plots/west_resids_PACF.png (PNG
- copy)>] <Plots/southwest_acf.png, id=242, 476.53032pt x 207.77625pt>
+ copy)>] <Plots/southwest_acf.png, id=246, 476.53032pt x 207.77625pt>
 File: Plots/southwest_acf.png Graphic file (type png)
 
 <use Plots/southwest_acf.png>
@@ -1268,7 +1268,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 472--473
 [][] 
  []
 
-<Plots/southwest_PACF.png, id=243, 476.53032pt x 207.77625pt>
+<Plots/southwest_PACF.png, id=247, 476.53032pt x 207.77625pt>
 File: Plots/southwest_PACF.png Graphic file (type png)
 
 <use Plots/southwest_PACF.png>
@@ -1279,7 +1279,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 476--477
 [][] 
  []
 
-<Plots/southwest_resid_ACF.png, id=244, 476.53032pt x 207.77625pt>
+<Plots/southwest_resid_ACF.png, id=248, 476.53032pt x 207.77625pt>
 File: Plots/southwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/southwest_resid_ACF.png>
@@ -1290,7 +1290,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 480--481
 [][] 
  []
 
-<Plots/southwest_resid_pacf.png, id=245, 476.53032pt x 207.77625pt>
+<Plots/southwest_resid_pacf.png, id=249, 476.53032pt x 207.77625pt>
 File: Plots/southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/southwest_resid_pacf.png>
@@ -1305,7 +1305,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 484--485
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11pdfTeX warning (ext4): destination with the same identifier (name{table.6})
+ [12pdfTeX warning (ext4): destination with the same identifier (name{table.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1314,7 +1314,7 @@ l.513  \break
               <./Plots/southwest_acf.png (PNG copy)> <./Plots/southwest_PACF.pn
 g (PNG copy)> <./Plots/southwest_resid_ACF.png (PNG copy)> <./Plots/southwest_r
 esid_pacf.png (PNG copy)>]
-<Plots/southeast_acf.png, id=251, 476.53032pt x 207.77625pt>
+<Plots/southeast_acf.png, id=255, 476.53032pt x 207.77625pt>
 File: Plots/southeast_acf.png Graphic file (type png)
 
 <use Plots/southeast_acf.png>
@@ -1325,7 +1325,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 523--524
 [][] 
  []
 
-<Plots/southeast_PACF.png, id=252, 476.53032pt x 207.77625pt>
+<Plots/southeast_PACF.png, id=256, 476.53032pt x 207.77625pt>
 File: Plots/southeast_PACF.png Graphic file (type png)
 
 <use Plots/southeast_PACF.png>
@@ -1336,7 +1336,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 527--528
 [][] 
  []
 
-<Plots/southeast_resid_acf.png, id=253, 476.53032pt x 207.77625pt>
+<Plots/southeast_resid_acf.png, id=257, 476.53032pt x 207.77625pt>
 File: Plots/southeast_resid_acf.png Graphic file (type png)
 
 <use Plots/southeast_resid_acf.png>
@@ -1347,7 +1347,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 531--532
 [][] 
  []
 
-<Plots/southeast_resid_pacf.png, id=254, 476.53032pt x 207.77625pt>
+<Plots/southeast_resid_pacf.png, id=258, 476.53032pt x 207.77625pt>
 File: Plots/southeast_resid_pacf.png Graphic file (type png)
 
 <use Plots/southeast_resid_pacf.png>
@@ -1362,7 +1362,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 535--536
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12pdfTeX warning (ext4): destination with the same identifier (name{table.7})
+ [13pdfTeX warning (ext4): destination with the same identifier (name{table.7})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1371,7 +1371,7 @@ l.566  \break
               <./Plots/southeast_acf.png (PNG copy)> <./Plots/southeast_PACF.pn
 g (PNG copy)> <./Plots/southeast_resid_acf.png (PNG copy)> <./Plots/southeast_r
 esid_pacf.png (PNG copy)>]
-<Plots/northwest_ACF.png, id=260, 476.53032pt x 207.77625pt>
+<Plots/northwest_ACF.png, id=265, 476.53032pt x 207.77625pt>
 File: Plots/northwest_ACF.png Graphic file (type png)
 
 <use Plots/northwest_ACF.png>
@@ -1382,7 +1382,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 573--574
 [][] 
  []
 
-<Plots/northwest_PACF.png, id=261, 476.53032pt x 207.77625pt>
+<Plots/northwest_PACF.png, id=266, 476.53032pt x 207.77625pt>
 File: Plots/northwest_PACF.png Graphic file (type png)
 
 <use Plots/northwest_PACF.png>
@@ -1393,7 +1393,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 577--578
 [][] 
  []
 
-<Plots/northwest_resid_ACF.png, id=262, 476.53032pt x 207.77625pt>
+<Plots/northwest_resid_ACF.png, id=267, 476.53032pt x 207.77625pt>
 File: Plots/northwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_ACF.png>
@@ -1404,7 +1404,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 581--582
 [][] 
  []
 
-<Plots/northwest_resid_PACF.png, id=263, 476.53032pt x 207.77625pt>
+<Plots/northwest_resid_PACF.png, id=268, 476.53032pt x 207.77625pt>
 File: Plots/northwest_resid_PACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_PACF.png>
@@ -1419,7 +1419,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 585--586
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13pdfTeX warning (ext4): destination with the same identifier (name{table.8})
+ [14pdfTeX warning (ext4): destination with the same identifier (name{table.8})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1428,7 +1428,7 @@ l.608  \break
               <./Plots/northwest_ACF.png (PNG copy)> <./Plots/northwest_PACF.pn
 g (PNG copy)> <./Plots/northwest_resid_ACF.png (PNG copy)> <./Plots/northwest_r
 esid_PACF.png (PNG copy)>]
-<Plots/north_ACF.png, id=270, 476.53032pt x 207.77625pt>
+<Plots/north_ACF.png, id=274, 476.53032pt x 207.77625pt>
 File: Plots/north_ACF.png Graphic file (type png)
 
 <use Plots/north_ACF.png>
@@ -1439,7 +1439,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 616--617
 [][] 
  []
 
-<Plots/North_PACF.png, id=271, 476.53032pt x 207.77625pt>
+<Plots/North_PACF.png, id=275, 476.53032pt x 207.77625pt>
 File: Plots/North_PACF.png Graphic file (type png)
 
 <use Plots/North_PACF.png>
@@ -1450,7 +1450,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 620--621
 [][] 
  []
 
-<Plots/north_resid_ACF.png, id=272, 476.53032pt x 207.77625pt>
+<Plots/north_resid_ACF.png, id=276, 476.53032pt x 207.77625pt>
 File: Plots/north_resid_ACF.png Graphic file (type png)
 
 <use Plots/north_resid_ACF.png>
@@ -1461,7 +1461,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 624--625
 [][] 
  []
 
-<Plots/north_resid_PACF.png, id=273, 476.53032pt x 207.77625pt>
+<Plots/north_resid_PACF.png, id=277, 476.53032pt x 207.77625pt>
 File: Plots/north_resid_PACF.png Graphic file (type png)
 
 <use Plots/north_resid_PACF.png>
@@ -1475,7 +1475,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 628--629
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14pdfTeX warning (ext4): destination with the same identifier (name{table.9})
+ [15pdfTeX warning (ext4): destination with the same identifier (name{table.9})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1483,7 +1483,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 l.651  \break
               <./Plots/north_ACF.png (PNG copy)> <./Plots/North_PACF.png (PNG c
 opy)> <./Plots/north_resid_ACF.png (PNG copy)> <./Plots/north_resid_PACF.png (P
-NG copy)>] <Plots/far_southwest_acf.png, id=279, 476.53032pt x 207.77625pt>
+NG copy)>] <Plots/far_southwest_acf.png, id=283, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_acf.png>
@@ -1494,7 +1494,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 657--658
 [][] 
  []
 
-<Plots/far_southwest_pacf.png, id=280, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_pacf.png, id=284, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_pacf.png>
@@ -1505,7 +1505,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 661--662
 [][] 
  []
 
-<Plots/far_southwest_resid_acf.png, id=281, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_resid_acf.png, id=285, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_resid_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_acf.png>
@@ -1517,7 +1517,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 665--666
 [][] 
  []
 
-<Plots/far_southwest_resid_pacf.png, id=282, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_resid_pacf.png, id=286, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_pacf.png>
@@ -1532,7 +1532,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 669--670
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15pdfTeX warning (ext4): destination with the same identifier (name{table.10}
+ [16pdfTeX warning (ext4): destination with the same identifier (name{table.10}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1541,7 +1541,7 @@ l.693  \break
               <./Plots/far_southwest_acf.png (PNG copy)> <./Plots/far_southwest
 _pacf.png (PNG copy)> <./Plots/far_southwest_resid_acf.png (PNG copy)> <./Plots
 /far_southwest_resid_pacf.png (PNG copy)>]
-<Plots/far_north_ACF.png, id=288, 476.53032pt x 207.77625pt>
+<Plots/far_north_ACF.png, id=292, 476.53032pt x 207.77625pt>
 File: Plots/far_north_ACF.png Graphic file (type png)
 
 <use Plots/far_north_ACF.png>
@@ -1552,7 +1552,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 700--701
 [][] 
  []
 
-<Plots/far_north_PACF.png, id=289, 476.53032pt x 207.77625pt>
+<Plots/far_north_PACF.png, id=293, 476.53032pt x 207.77625pt>
 File: Plots/far_north_PACF.png Graphic file (type png)
 
 <use Plots/far_north_PACF.png>
@@ -1563,7 +1563,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 704--705
 [][] 
  []
 
-<Plots/far_north_resids_ACF.png, id=290, 476.53032pt x 207.77625pt>
+<Plots/far_north_resids_ACF.png, id=294, 476.53032pt x 207.77625pt>
 File: Plots/far_north_resids_ACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_ACF.png>
@@ -1575,7 +1575,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 708--709
 [][] 
  []
 
-<Plots/far_north_resids_PACF.png, id=291, 476.53032pt x 207.77625pt>
+<Plots/far_north_resids_PACF.png, id=295, 476.53032pt x 207.77625pt>
 File: Plots/far_north_resids_PACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_PACF.png>
@@ -1590,7 +1590,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 712--713
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16pdfTeX warning (ext4): destination with the same identifier (name{table.11}
+ [17pdfTeX warning (ext4): destination with the same identifier (name{table.11}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1599,7 +1599,7 @@ l.735  \break
               <./Plots/far_north_ACF.png (PNG copy)> <./Plots/far_north_PACF.pn
 g (PNG copy)> <./Plots/far_north_resids_ACF.png (PNG copy)> <./Plots/far_north_
 resids_PACF.png (PNG copy)>]
-<Plots/Central_ACF.png, id=297, 476.53032pt x 207.77625pt>
+<Plots/Central_ACF.png, id=301, 476.53032pt x 207.77625pt>
 File: Plots/Central_ACF.png Graphic file (type png)
 
 <use Plots/Central_ACF.png>
@@ -1610,7 +1610,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 744--745
 [][] 
  []
 
-<Plots/Central_PACF.png, id=298, 476.53032pt x 207.77625pt>
+<Plots/Central_PACF.png, id=302, 476.53032pt x 207.77625pt>
 File: Plots/Central_PACF.png Graphic file (type png)
 
 <use Plots/Central_PACF.png>
@@ -1621,7 +1621,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 748--749
 [][] 
  []
 
-<Plots/Central_resid_ACF.png, id=299, 476.53032pt x 207.77625pt>
+<Plots/Central_resid_ACF.png, id=303, 476.53032pt x 207.77625pt>
 File: Plots/Central_resid_ACF.png Graphic file (type png)
 
 <use Plots/Central_resid_ACF.png>
@@ -1632,7 +1632,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 752--753
 [][] 
  []
 
-<Plots/Central_resid_PACF.png, id=300, 476.53032pt x 207.77625pt>
+<Plots/Central_resid_PACF.png, id=304, 476.53032pt x 207.77625pt>
 File: Plots/Central_resid_PACF.png Graphic file (type png)
 
 <use Plots/Central_resid_PACF.png>
@@ -1646,7 +1646,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 756--757
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17pdfTeX warning (ext4): destination with the same identifier (name{table.12}
+ [18pdfTeX warning (ext4): destination with the same identifier (name{table.12}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1657,7 +1657,7 @@ l.852
 PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18pdfTeX warning (ext4): destination with the same identifier (name{table.13}
+ [19pdfTeX warning (ext4): destination with the same identifier (name{table.13}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1665,7 +1665,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 l.919 
       ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 920.
- [19pdfTeX warning (ext4): destination with the same identifier (name{table.14}
+ [20pdfTeX warning (ext4): destination with the same identifier (name{table.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1685,8 +1685,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 920.
  ) 
 Here is how much of TeX's memory you used:
- 14880 strings out of 493316
- 247602 string characters out of 6140414
+ 14881 strings out of 493316
+ 247609 string characters out of 6140414
  367840 words of memory out of 5000000
  17975 multiletter control sequences out of 15000+600000
  24856 words of font info for 66 fonts, out of 8000000 for 9000
@@ -1712,10 +1712,10 @@ ve/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy7.pk></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Americas_Warzone.pdf (19 pages, 1375520 bytes).
+Output written on Americas_Warzone.pdf (20 pages, 1376038 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 78 named destinations out of 1000 (max. 500000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 79 named destinations out of 1000 (max. 500000)
  353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
