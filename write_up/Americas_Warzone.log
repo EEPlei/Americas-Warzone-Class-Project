@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,67 +1087,73 @@ Underfull \hbox (badness 1112) in paragraph at lines 391--392
  []
 
 
-Underfull \hbox (badness 4467) in paragraph at lines 394--395
+Underfull \hbox (badness 4467) in paragraph at lines 395--396
 []\OT1/ptm/m/n/10 [6] City of Chicago. \OT1/ptm/m/it/10 Pub-lic Safety: Crimes 
 2001 to Present. \OT1/ptm/m/n/10 City of Chicago
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 \OT1/ptm/m/n/10 Open Data Project. [][]$\OT1/pcr/m/n/10 https : / / data . city
 ofchicago . org / Public-[]Safety /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 [][]$\OT1/pcr/m/n/10 https : / / data . cityofchicago . org / Community-[]Econo
 mic-[]Development /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 []\OT1/ptm/m/n/10 [8] City of Chicago. \OT1/ptm/m/it/10 311 Ser-vice Re-quests 
 Graf-fiti Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 \OT1/ptm/m/it/10 moval. \OT1/ptm/m/n/10 City of Chicago Open Data Project. [][]
 $\OT1/pcr/m/n/10 https : / / data .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 \OT1/pcr/m/n/10 cityofchicago . org / Environment-[]Sustainable-[]Development /
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+\OT1/pcr/m/n/10 Average-[]Gas-[]Usage-[]per-[]Square-[]Foot-[]by-[]Community-[]
+Are / jp7r-[]k6h2$[][]\OT1/ptm/m/n/10 , May
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
 \OT1/pcr/m/n/10 2010-[]census-[]data-[]summarized-[]to-[]chicago-[]community-[]
 areas / resource /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 \OT1/pcr/m/n/10 publication / 2013 / 12 / 48yearsofcrime _ final _ ispsworkingp
 aper023 . pdf$[][]\OT1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 409--410
+Underfull \hbox (badness 1412) in paragraph at lines 412--413
 []\OT1/ptm/m/n/10 [12] Pear-son, Rick. \OT1/ptm/m/it/10 Trump Again As-sails Ch
 icago gun vi-o-lence in speech to Congress\OT1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 409--410
+Underfull \hbox (badness 7168) in paragraph at lines 412--413
 \OT1/ptm/m/n/10 Chicago Tri-bune. [][]$\OT1/pcr/m/n/10 http : / / www . chicago
 tribune . com / news / local / politics /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 \OT1/pcr/m/n/10 ct-[]donald-[]trump-[]congress-[]speech-[]chicago-[]met-[]20170
 228-[]story . html$[][]\OT1/ptm/m/n/10 .
  []
@@ -1158,10 +1164,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--410
 File: Plots/West_ACF.png Graphic file (type png)
 
 <use Plots/West_ACF.png>
-Package pdftex.def Info: Plots/West_ACF.png used on input line 430.
+Package pdftex.def Info: Plots/West_ACF.png used on input line 433.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 430--431
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 433--434
 [][] 
  []
 
@@ -1169,10 +1175,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 430--431
 File: Plots/West_PACF.png Graphic file (type png)
 
 <use Plots/West_PACF.png>
-Package pdftex.def Info: Plots/West_PACF.png used on input line 434.
+Package pdftex.def Info: Plots/West_PACF.png used on input line 437.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 434--435
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 437--438
 [][] 
  []
 
@@ -1180,10 +1186,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 434--435
 File: Plots/west_resids_ACF.png Graphic file (type png)
 
 <use Plots/west_resids_ACF.png>
-Package pdftex.def Info: Plots/west_resids_ACF.png used on input line 438.
+Package pdftex.def Info: Plots/west_resids_ACF.png used on input line 441.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 438--439
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 441--442
 [][] 
  []
 
@@ -1191,10 +1197,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 438--439
 File: Plots/west_resids_PACF.png Graphic file (type png)
 
 <use Plots/west_resids_PACF.png>
-Package pdftex.def Info: Plots/west_resids_PACF.png used on input line 442.
+Package pdftex.def Info: Plots/west_resids_PACF.png used on input line 445.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 442--443
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 445--446
 [][] 
  []
 
@@ -1208,17 +1214,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.468  \break
+l.471  \break
               <./Plots/West_ACF.png (PNG copy)> <./Plots/West_PACF.png (PNG cop
 y)> <./Plots/west_resids_ACF.png (PNG copy)> <./Plots/west_resids_PACF.png (PNG
  copy)>] <Plots/southwest_acf.png, id=257, 476.53032pt x 207.77625pt>
 File: Plots/southwest_acf.png Graphic file (type png)
 
 <use Plots/southwest_acf.png>
-Package pdftex.def Info: Plots/southwest_acf.png used on input line 475.
+Package pdftex.def Info: Plots/southwest_acf.png used on input line 478.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 475--476
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 478--479
 [][] 
  []
 
@@ -1226,10 +1232,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 475--476
 File: Plots/southwest_PACF.png Graphic file (type png)
 
 <use Plots/southwest_PACF.png>
-Package pdftex.def Info: Plots/southwest_PACF.png used on input line 479.
+Package pdftex.def Info: Plots/southwest_PACF.png used on input line 482.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 479--480
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 482--483
 [][] 
  []
 
@@ -1237,10 +1243,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 479--480
 File: Plots/southwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/southwest_resid_ACF.png>
-Package pdftex.def Info: Plots/southwest_resid_ACF.png used on input line 483.
+Package pdftex.def Info: Plots/southwest_resid_ACF.png used on input line 486.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 483--484
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 486--487
 [][] 
  []
 
@@ -1248,11 +1254,11 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 483--484
 File: Plots/southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/southwest_resid_pacf.png>
-Package pdftex.def Info: Plots/southwest_resid_pacf.png used on input line 487.
+Package pdftex.def Info: Plots/southwest_resid_pacf.png used on input line 490.
 
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 487--488
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 490--491
 [][] 
  []
 
@@ -1264,7 +1270,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.516  \break
+l.519  \break
               <./Plots/southwest_acf.png (PNG copy)> <./Plots/southwest_PACF.pn
 g (PNG copy)> <./Plots/southwest_resid_ACF.png (PNG copy)> <./Plots/southwest_r
 esid_pacf.png (PNG copy)>]
@@ -1272,10 +1278,10 @@ esid_pacf.png (PNG copy)>]
 File: Plots/southeast_acf.png Graphic file (type png)
 
 <use Plots/southeast_acf.png>
-Package pdftex.def Info: Plots/southeast_acf.png used on input line 526.
+Package pdftex.def Info: Plots/southeast_acf.png used on input line 529.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 526--527
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 529--530
 [][] 
  []
 
@@ -1283,10 +1289,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 526--527
 File: Plots/southeast_PACF.png Graphic file (type png)
 
 <use Plots/southeast_PACF.png>
-Package pdftex.def Info: Plots/southeast_PACF.png used on input line 530.
+Package pdftex.def Info: Plots/southeast_PACF.png used on input line 533.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 530--531
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 533--534
 [][] 
  []
 
@@ -1294,10 +1300,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 530--531
 File: Plots/southeast_resid_acf.png Graphic file (type png)
 
 <use Plots/southeast_resid_acf.png>
-Package pdftex.def Info: Plots/southeast_resid_acf.png used on input line 534.
+Package pdftex.def Info: Plots/southeast_resid_acf.png used on input line 537.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 534--535
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 537--538
 [][] 
  []
 
@@ -1305,11 +1311,11 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 534--535
 File: Plots/southeast_resid_pacf.png Graphic file (type png)
 
 <use Plots/southeast_resid_pacf.png>
-Package pdftex.def Info: Plots/southeast_resid_pacf.png used on input line 538.
+Package pdftex.def Info: Plots/southeast_resid_pacf.png used on input line 541.
 
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 538--539
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 541--542
 [][] 
  []
 
@@ -1321,7 +1327,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.569  \break
+l.572  \break
               <./Plots/southeast_acf.png (PNG copy)> <./Plots/southeast_PACF.pn
 g (PNG copy)> <./Plots/southeast_resid_acf.png (PNG copy)> <./Plots/southeast_r
 esid_pacf.png (PNG copy)>]
@@ -1329,10 +1335,10 @@ esid_pacf.png (PNG copy)>]
 File: Plots/northwest_ACF.png Graphic file (type png)
 
 <use Plots/northwest_ACF.png>
-Package pdftex.def Info: Plots/northwest_ACF.png used on input line 576.
+Package pdftex.def Info: Plots/northwest_ACF.png used on input line 579.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 576--577
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 579--580
 [][] 
  []
 
@@ -1340,10 +1346,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 576--577
 File: Plots/northwest_PACF.png Graphic file (type png)
 
 <use Plots/northwest_PACF.png>
-Package pdftex.def Info: Plots/northwest_PACF.png used on input line 580.
+Package pdftex.def Info: Plots/northwest_PACF.png used on input line 583.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 580--581
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 583--584
 [][] 
  []
 
@@ -1351,10 +1357,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 580--581
 File: Plots/northwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_ACF.png>
-Package pdftex.def Info: Plots/northwest_resid_ACF.png used on input line 584.
+Package pdftex.def Info: Plots/northwest_resid_ACF.png used on input line 587.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 584--585
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 587--588
 [][] 
  []
 
@@ -1362,11 +1368,11 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 584--585
 File: Plots/northwest_resid_PACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_PACF.png>
-Package pdftex.def Info: Plots/northwest_resid_PACF.png used on input line 588.
+Package pdftex.def Info: Plots/northwest_resid_PACF.png used on input line 591.
 
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 588--589
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 591--592
 [][] 
  []
 
@@ -1378,7 +1384,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.611  \break
+l.614  \break
               <./Plots/northwest_ACF.png (PNG copy)> <./Plots/northwest_PACF.pn
 g (PNG copy)> <./Plots/northwest_resid_ACF.png (PNG copy)> <./Plots/northwest_r
 esid_PACF.png (PNG copy)>]
@@ -1386,10 +1392,10 @@ esid_PACF.png (PNG copy)>]
 File: Plots/north_ACF.png Graphic file (type png)
 
 <use Plots/north_ACF.png>
-Package pdftex.def Info: Plots/north_ACF.png used on input line 619.
+Package pdftex.def Info: Plots/north_ACF.png used on input line 622.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 619--620
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 622--623
 [][] 
  []
 
@@ -1397,10 +1403,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 619--620
 File: Plots/North_PACF.png Graphic file (type png)
 
 <use Plots/North_PACF.png>
-Package pdftex.def Info: Plots/North_PACF.png used on input line 623.
+Package pdftex.def Info: Plots/North_PACF.png used on input line 626.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 623--624
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 626--627
 [][] 
  []
 
@@ -1408,10 +1414,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 623--624
 File: Plots/north_resid_ACF.png Graphic file (type png)
 
 <use Plots/north_resid_ACF.png>
-Package pdftex.def Info: Plots/north_resid_ACF.png used on input line 627.
+Package pdftex.def Info: Plots/north_resid_ACF.png used on input line 630.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 627--628
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 630--631
 [][] 
  []
 
@@ -1419,10 +1425,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 627--628
 File: Plots/north_resid_PACF.png Graphic file (type png)
 
 <use Plots/north_resid_PACF.png>
-Package pdftex.def Info: Plots/north_resid_PACF.png used on input line 631.
+Package pdftex.def Info: Plots/north_resid_PACF.png used on input line 634.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 631--632
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 634--635
 [][] 
  []
 
@@ -1434,17 +1440,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.654  \break
+l.657  \break
               <./Plots/north_ACF.png (PNG copy)> <./Plots/North_PACF.png (PNG c
 opy)> <./Plots/north_resid_ACF.png (PNG copy)> <./Plots/north_resid_PACF.png (P
 NG copy)>] <Plots/far_southwest_acf.png, id=294, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_acf.png>
-Package pdftex.def Info: Plots/far_southwest_acf.png used on input line 660.
+Package pdftex.def Info: Plots/far_southwest_acf.png used on input line 663.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 660--661
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 663--664
 [][] 
  []
 
@@ -1452,10 +1458,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 660--661
 File: Plots/far_southwest_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_pacf.png>
-Package pdftex.def Info: Plots/far_southwest_pacf.png used on input line 664.
+Package pdftex.def Info: Plots/far_southwest_pacf.png used on input line 667.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 664--665
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 667--668
 [][] 
  []
 
@@ -1464,10 +1470,10 @@ File: Plots/far_southwest_resid_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_acf.png>
 Package pdftex.def Info: Plots/far_southwest_resid_acf.png used on input line 6
-68.
+71.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 668--669
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 671--672
 [][] 
  []
 
@@ -1476,10 +1482,10 @@ File: Plots/far_southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_pacf.png>
 Package pdftex.def Info: Plots/far_southwest_resid_pacf.png used on input line 
-672.
+675.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 672--673
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 675--676
 [][] 
  []
 
@@ -1491,7 +1497,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.696  \break
+l.699  \break
               <./Plots/far_southwest_acf.png (PNG copy)> <./Plots/far_southwest
 _pacf.png (PNG copy)> <./Plots/far_southwest_resid_acf.png (PNG copy)> <./Plots
 /far_southwest_resid_pacf.png (PNG copy)>]
@@ -1499,10 +1505,10 @@ _pacf.png (PNG copy)> <./Plots/far_southwest_resid_acf.png (PNG copy)> <./Plots
 File: Plots/far_north_ACF.png Graphic file (type png)
 
 <use Plots/far_north_ACF.png>
-Package pdftex.def Info: Plots/far_north_ACF.png used on input line 703.
+Package pdftex.def Info: Plots/far_north_ACF.png used on input line 706.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 703--704
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 706--707
 [][] 
  []
 
@@ -1510,10 +1516,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 703--704
 File: Plots/far_north_PACF.png Graphic file (type png)
 
 <use Plots/far_north_PACF.png>
-Package pdftex.def Info: Plots/far_north_PACF.png used on input line 707.
+Package pdftex.def Info: Plots/far_north_PACF.png used on input line 710.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 707--708
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 710--711
 [][] 
  []
 
@@ -1521,11 +1527,11 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 707--708
 File: Plots/far_north_resids_ACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_ACF.png>
-Package pdftex.def Info: Plots/far_north_resids_ACF.png used on input line 711.
+Package pdftex.def Info: Plots/far_north_resids_ACF.png used on input line 714.
 
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 711--712
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 714--715
 [][] 
  []
 
@@ -1533,11 +1539,11 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 711--712
 File: Plots/far_north_resids_PACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_PACF.png>
-Package pdftex.def Info: Plots/far_north_resids_PACF.png used on input line 715
+Package pdftex.def Info: Plots/far_north_resids_PACF.png used on input line 718
 .
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 715--716
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 718--719
 [][] 
  []
 
@@ -1549,7 +1555,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.738  \break
+l.741  \break
               <./Plots/far_north_ACF.png (PNG copy)> <./Plots/far_north_PACF.pn
 g (PNG copy)> <./Plots/far_north_resids_ACF.png (PNG copy)> <./Plots/far_north_
 resids_PACF.png (PNG copy)>]
@@ -1557,10 +1563,10 @@ resids_PACF.png (PNG copy)>]
 File: Plots/Central_ACF.png Graphic file (type png)
 
 <use Plots/Central_ACF.png>
-Package pdftex.def Info: Plots/Central_ACF.png used on input line 747.
+Package pdftex.def Info: Plots/Central_ACF.png used on input line 750.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 747--748
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 750--751
 [][] 
  []
 
@@ -1568,10 +1574,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 747--748
 File: Plots/Central_PACF.png Graphic file (type png)
 
 <use Plots/Central_PACF.png>
-Package pdftex.def Info: Plots/Central_PACF.png used on input line 751.
+Package pdftex.def Info: Plots/Central_PACF.png used on input line 754.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 751--752
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 754--755
 [][] 
  []
 
@@ -1579,10 +1585,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 751--752
 File: Plots/Central_resid_ACF.png Graphic file (type png)
 
 <use Plots/Central_resid_ACF.png>
-Package pdftex.def Info: Plots/Central_resid_ACF.png used on input line 755.
+Package pdftex.def Info: Plots/Central_resid_ACF.png used on input line 758.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 755--756
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 758--759
 [][] 
  []
 
@@ -1590,10 +1596,10 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 755--756
 File: Plots/Central_resid_PACF.png Graphic file (type png)
 
 <use Plots/Central_resid_PACF.png>
-Package pdftex.def Info: Plots/Central_resid_PACF.png used on input line 759.
+Package pdftex.def Info: Plots/Central_resid_PACF.png used on input line 762.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-Overfull \hbox (43.11061pt too wide) in paragraph at lines 759--760
+Overfull \hbox (43.11061pt too wide) in paragraph at lines 762--763
 [][] 
  []
 
@@ -1605,7 +1611,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.855 
+l.858 
        <./Plots/Central_ACF.png (PNG copy)> <./Plots/Central_PACF.png (PNG copy
 )> <./Plots/Central_resid_ACF.png (PNG copy)> <./Plots/Central_resid_PACF.png (
 PNG copy)>]
@@ -1616,27 +1622,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.922 
+l.925 
       ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 923.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 926.
  [20pdfTeX warning (ext4): destination with the same identifier (name{table.14}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.923 \end{document}
+l.926 \end{document}
                     ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 923.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 926.
  (./Americas_Warzone.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 923.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 923.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 926.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 926.
 Package rerunfilecheck Info: File `Americas_Warzone.out' has not changed.
 (rerunfilecheck)             Checksum: A8A318FD30C76A2E283AF47A695EB378;1584.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 923.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 926.
  ) 
 Here is how much of TeX's memory you used:
  14885 strings out of 493316
@@ -1666,7 +1672,7 @@ ve/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy7.pk></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Americas_Warzone.pdf (20 pages, 1383562 bytes).
+Output written on Americas_Warzone.pdf (20 pages, 1383561 bytes).
 PDF statistics:
  492 PDF objects out of 1000 (max. 8388607)
  343 compressed objects within 4 object streams
