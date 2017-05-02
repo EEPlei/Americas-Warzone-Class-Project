@@ -144,19 +144,20 @@ uncool_pred$resid %>% .^2 %>% mean() %>% sqrt()
 
 comb_pred = rbind(uncool_pred, armed_robbery_pred)
 comb_pred = comb_pred %>% mutate(Regression = rep(c("Penalized", "Spatial Penalized"), each = 77))
-pdf("results.pdf", width = 9, height = 9)
+pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/results.pdf", 
+    width = 9, height = 9)
 grid.arrange(
   ggplot(comb_pred) +
     geom_sf(aes(fill=obs_pred), color=NA) + 
     labs(title="Predicted Cases",fill="") + 
     facet_grid(Regression ~ .) + 
-    scale_fill_gradient2(low = "purple", mid = "blue", high = "green", 
+    scale_fill_gradient2(low = "blue", mid = "white", high = "red", 
                         na.value = "grey50", guide = "colourbar", midpoint = 5000),
   ggplot(comb_pred) +
     geom_sf(aes(fill=resid), color=NA) + 
     labs(title="Residuals",fill="") + 
     facet_grid(Regression ~ .) + 
-    scale_fill_gradient2(low = "purple", mid = "blue",high = "green", 
+    scale_fill_gradient2(low = "blue", mid = "white",high = "red", 
                         na.value = "grey50", guide = "colourbar", midpoint = 0),
   ncol=2
 )
@@ -179,6 +180,7 @@ cis = t(cis) %>% data.frame()
 colnames(cis) = c("2.5%", "97.5%", "Spatial", "IncludeZero")
 cis$Variable = c("Intercept", Xvars)
 cis = cis %>% filter(IncludeZero == 0)
+cis$IncludeZero = as.logical(cis$IncludeZero)
 
 # pdf("/home/grad/lsq3/spatio_temp_proj/write_up/Plots/spatialCoef.pdf", width = 6, height = 3)
 # grid.table(cis %>% arrange(desc(abs(Spatial))) %>% `[`(1:10,) %>% select(Variable, Spatial))
@@ -190,9 +192,11 @@ cis = cis %>% filter(IncludeZero == 0)
 # dev.off()
 # 
 # 
-cis$IncludeZero = as.logical(cis$IncludeZero)
+
 xtable(cbind(data.frame(Variable = c("Intercept", Xvars), 
                         Lasso = coef(uncoolFit, s= 1) %>% 
-                          as.vector()),cis[,1:4])) %>% 
+                          as.vector()),cis[,1:4]), digits = c(4)) %>% 
   print(include.rownames = F)
 
+xtable(lassoCoef %>% arrange(desc(abs(Lasso))), digits = c(4)) %>% print(include.rownames = F)
+xtable(cis %>% arrange(desc(abs(Spatial))) %>% select(-IncludeZero), digits = c(4)) %>% print(include.rownames = F)
