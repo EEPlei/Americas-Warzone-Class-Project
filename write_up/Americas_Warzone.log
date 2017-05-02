@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 04:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2017.1.3)  2 MAY 2017 07:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1192,7 +1192,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--305
 228-[]story . html$[][]\OT1/ptm/m/n/10 ,
  []
 
-[7] <Plots/West_ACF.png, id=181, 476.53032pt x 207.77625pt>
+[7] <Plots/West_ACF.png, id=183, 476.53032pt x 207.77625pt>
 File: Plots/West_ACF.png Graphic file (type png)
 
 <use Plots/West_ACF.png>
@@ -1203,7 +1203,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 322--323
 [][] 
  []
 
-<Plots/West_PACF.png, id=182, 476.53032pt x 207.77625pt>
+<Plots/West_PACF.png, id=184, 476.53032pt x 207.77625pt>
 File: Plots/West_PACF.png Graphic file (type png)
 
 <use Plots/West_PACF.png>
@@ -1214,7 +1214,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 326--327
 [][] 
  []
 
-<Plots/west_resids_ACF.png, id=183, 476.53032pt x 207.77625pt>
+<Plots/west_resids_ACF.png, id=185, 476.53032pt x 207.77625pt>
 File: Plots/west_resids_ACF.png Graphic file (type png)
 
 <use Plots/west_resids_ACF.png>
@@ -1225,7 +1225,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 330--331
 [][] 
  []
 
-<Plots/west_resids_PACF.png, id=184, 476.53032pt x 207.77625pt>
+<Plots/west_resids_PACF.png, id=186, 476.53032pt x 207.77625pt>
 File: Plots/west_resids_PACF.png Graphic file (type png)
 
 <use Plots/west_resids_PACF.png>
@@ -1236,14 +1236,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 334--335
 [][] 
  []
 
-<Plots/west_resids.png, id=185, 476.53032pt x 207.77625pt>
+<Plots/west_resids.png, id=187, 476.53032pt x 207.77625pt>
 File: Plots/west_resids.png Graphic file (type png)
 
 <use Plots/west_resids.png>
 Package pdftex.def Info: Plots/west_resids.png used on input line 340.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/southwest_acf.png, id=186, 476.53032pt x 207.77625pt>
+<Plots/southwest_acf.png, id=188, 476.53032pt x 207.77625pt>
 File: Plots/southwest_acf.png Graphic file (type png)
 
 <use Plots/southwest_acf.png>
@@ -1263,7 +1263,7 @@ Overfull \vbox (95.74507pt too high) has occurred while \output is active []
  <./Plots/West_ACF.png (PNG copy)> <./Plots/West_PACF.png (PNG copy)> <./Plots/
 west_resids_ACF.png (PNG copy)> <./Plots/west_resids_PACF.png (PNG copy)> <./Pl
 ots/west_resids.png> <./Plots/southwest_acf.png (PNG copy)>]
-<Plots/southwest_PACF.png, id=192, 476.53032pt x 207.77625pt>
+<Plots/southwest_PACF.png, id=194, 476.53032pt x 207.77625pt>
 File: Plots/southwest_PACF.png Graphic file (type png)
 
 <use Plots/southwest_PACF.png>
@@ -1274,7 +1274,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 355--356
 [][] 
  []
 
-<Plots/southwest_resid_ACF.png, id=193, 476.53032pt x 207.77625pt>
+<Plots/southwest_resid_ACF.png, id=195, 476.53032pt x 207.77625pt>
 File: Plots/southwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/southwest_resid_ACF.png>
@@ -1285,7 +1285,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 359--360
 [][] 
  []
 
-<Plots/southwest_resid_pacf.png, id=194, 476.53032pt x 207.77625pt>
+<Plots/southwest_resid_pacf.png, id=196, 476.53032pt x 207.77625pt>
 File: Plots/southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/southwest_resid_pacf.png>
@@ -1297,14 +1297,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 363--364
 [][] 
  []
 
-<Plots/southwest_resid.png, id=195, 476.53032pt x 207.77625pt>
+<Plots/southwest_resid.png, id=197, 476.53032pt x 207.77625pt>
 File: Plots/southwest_resid.png Graphic file (type png)
 
 <use Plots/southwest_resid.png>
 Package pdftex.def Info: Plots/southwest_resid.png used on input line 370.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/southeast_acf.png, id=196, 476.53032pt x 207.77625pt>
+<Plots/southeast_acf.png, id=198, 476.53032pt x 207.77625pt>
 File: Plots/southeast_acf.png Graphic file (type png)
 
 <use Plots/southeast_acf.png>
@@ -1315,7 +1315,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 380--381
 [][] 
  []
 
-<Plots/southeast_PACF.png, id=197, 476.53032pt x 207.77625pt>
+<Plots/southeast_PACF.png, id=199, 476.53032pt x 207.77625pt>
 File: Plots/southeast_PACF.png Graphic file (type png)
 
 <use Plots/southeast_PACF.png>
@@ -1333,7 +1333,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [9 <./Plots/southwest_PACF.png (PNG copy)> <./Plots/southwest_resid_ACF.png (PN
 G copy)> <./Plots/southwest_resid_pacf.png (PNG copy)> <./Plots/southwest_resid
 .png> <./Plots/southeast_acf.png (PNG copy)>]
-<Plots/southeast_resid_acf.png, id=203, 476.53032pt x 207.77625pt>
+<Plots/southeast_resid_acf.png, id=205, 476.53032pt x 207.77625pt>
 File: Plots/southeast_resid_acf.png Graphic file (type png)
 
 <use Plots/southeast_resid_acf.png>
@@ -1344,7 +1344,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 388--389
 [][] 
  []
 
-<Plots/southeast_resid_pacf.png, id=204, 476.53032pt x 207.77625pt>
+<Plots/southeast_resid_pacf.png, id=206, 476.53032pt x 207.77625pt>
 File: Plots/southeast_resid_pacf.png Graphic file (type png)
 
 <use Plots/southeast_resid_pacf.png>
@@ -1356,14 +1356,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 392--393
 [][] 
  []
 
-<Plots/southeast_resid.png, id=205, 476.53032pt x 207.77625pt>
+<Plots/southeast_resid.png, id=207, 476.53032pt x 207.77625pt>
 File: Plots/southeast_resid.png Graphic file (type png)
 
 <use Plots/southeast_resid.png>
 Package pdftex.def Info: Plots/southeast_resid.png used on input line 399.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/northwest_ACF.png, id=206, 476.53032pt x 207.77625pt>
+<Plots/northwest_ACF.png, id=208, 476.53032pt x 207.77625pt>
 File: Plots/northwest_ACF.png Graphic file (type png)
 
 <use Plots/northwest_ACF.png>
@@ -1374,7 +1374,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 409--410
 [][] 
  []
 
-<Plots/northwest_PACF.png, id=207, 476.53032pt x 207.77625pt>
+<Plots/northwest_PACF.png, id=209, 476.53032pt x 207.77625pt>
 File: Plots/northwest_PACF.png Graphic file (type png)
 
 <use Plots/northwest_PACF.png>
@@ -1392,7 +1392,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [10 <./Plots/southeast_PACF.png (PNG copy)> <./Plots/southeast_resid_acf.png (P
 NG copy)> <./Plots/southeast_resid_pacf.png (PNG copy)> <./Plots/southeast_resi
 d.png> <./Plots/northwest_ACF.png (PNG copy)>]
-<Plots/northwest_resid_ACF.png, id=213, 476.53032pt x 207.77625pt>
+<Plots/northwest_resid_ACF.png, id=215, 476.53032pt x 207.77625pt>
 File: Plots/northwest_resid_ACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_ACF.png>
@@ -1403,7 +1403,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 417--418
 [][] 
  []
 
-<Plots/northwest_resid_PACF.png, id=214, 476.53032pt x 207.77625pt>
+<Plots/northwest_resid_PACF.png, id=216, 476.53032pt x 207.77625pt>
 File: Plots/northwest_resid_PACF.png Graphic file (type png)
 
 <use Plots/northwest_resid_PACF.png>
@@ -1415,14 +1415,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 421--422
 [][] 
  []
 
-<Plots/northwest_resids.png, id=215, 476.53032pt x 207.77625pt>
+<Plots/northwest_resids.png, id=217, 476.53032pt x 207.77625pt>
 File: Plots/northwest_resids.png Graphic file (type png)
 
 <use Plots/northwest_resids.png>
 Package pdftex.def Info: Plots/northwest_resids.png used on input line 427.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/north_ACF.png, id=216, 476.53032pt x 207.77625pt>
+<Plots/north_ACF.png, id=218, 476.53032pt x 207.77625pt>
 File: Plots/north_ACF.png Graphic file (type png)
 
 <use Plots/north_ACF.png>
@@ -1433,7 +1433,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 437--438
 [][] 
  []
 
-<Plots/North_PACF.png, id=217, 476.53032pt x 207.77625pt>
+<Plots/North_PACF.png, id=219, 476.53032pt x 207.77625pt>
 File: Plots/North_PACF.png Graphic file (type png)
 
 <use Plots/North_PACF.png>
@@ -1451,7 +1451,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [11 <./Plots/northwest_PACF.png (PNG copy)> <./Plots/northwest_resid_ACF.png (P
 NG copy)> <./Plots/northwest_resid_PACF.png (PNG copy)> <./Plots/northwest_resi
 ds.png> <./Plots/north_ACF.png (PNG copy)>]
-<Plots/north_resid_ACF.png, id=223, 476.53032pt x 207.77625pt>
+<Plots/north_resid_ACF.png, id=225, 476.53032pt x 207.77625pt>
 File: Plots/north_resid_ACF.png Graphic file (type png)
 
 <use Plots/north_resid_ACF.png>
@@ -1462,7 +1462,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 445--446
 [][] 
  []
 
-<Plots/north_resid_PACF.png, id=224, 476.53032pt x 207.77625pt>
+<Plots/north_resid_PACF.png, id=226, 476.53032pt x 207.77625pt>
 File: Plots/north_resid_PACF.png Graphic file (type png)
 
 <use Plots/north_resid_PACF.png>
@@ -1473,14 +1473,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 449--450
 [][] 
  []
 
-<Plots/north_residuals.png, id=225, 476.53032pt x 207.77625pt>
+<Plots/north_residuals.png, id=227, 476.53032pt x 207.77625pt>
 File: Plots/north_residuals.png Graphic file (type png)
 
 <use Plots/north_residuals.png>
 Package pdftex.def Info: Plots/north_residuals.png used on input line 455.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/far_southwest_acf.png, id=226, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_acf.png, id=228, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_acf.png>
@@ -1491,7 +1491,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 464--465
 [][] 
  []
 
-<Plots/far_southwest_pacf.png, id=227, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_pacf.png, id=229, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_pacf.png>
@@ -1509,7 +1509,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [12 <./Plots/North_PACF.png (PNG copy)> <./Plots/north_resid_ACF.png (PNG copy)
 > <./Plots/north_resid_PACF.png (PNG copy)> <./Plots/north_residuals.png> <./Pl
 ots/far_southwest_acf.png (PNG copy)>]
-<Plots/far_southwest_resid_acf.png, id=233, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_resid_acf.png, id=235, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_resid_acf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_acf.png>
@@ -1521,7 +1521,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 472--473
 [][] 
  []
 
-<Plots/far_southwest_resid_pacf.png, id=234, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_resid_pacf.png, id=236, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_resid_pacf.png Graphic file (type png)
 
 <use Plots/far_southwest_resid_pacf.png>
@@ -1533,14 +1533,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 476--477
 [][] 
  []
 
-<Plots/far_southwest_resid.png, id=235, 476.53032pt x 207.77625pt>
+<Plots/far_southwest_resid.png, id=237, 476.53032pt x 207.77625pt>
 File: Plots/far_southwest_resid.png Graphic file (type png)
 
 <use Plots/far_southwest_resid.png>
 Package pdftex.def Info: Plots/far_southwest_resid.png used on input line 483.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/far_north_ACF.png, id=236, 476.53032pt x 207.77625pt>
+<Plots/far_north_ACF.png, id=238, 476.53032pt x 207.77625pt>
 File: Plots/far_north_ACF.png Graphic file (type png)
 
 <use Plots/far_north_ACF.png>
@@ -1551,7 +1551,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 493--494
 [][] 
  []
 
-<Plots/far_north_PACF.png, id=237, 476.53032pt x 207.77625pt>
+<Plots/far_north_PACF.png, id=239, 476.53032pt x 207.77625pt>
 File: Plots/far_north_PACF.png Graphic file (type png)
 
 <use Plots/far_north_PACF.png>
@@ -1569,7 +1569,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [13 <./Plots/far_southwest_pacf.png (PNG copy)> <./Plots/far_southwest_resid_ac
 f.png (PNG copy)> <./Plots/far_southwest_resid_pacf.png (PNG copy)> <./Plots/fa
 r_southwest_resid.png> <./Plots/far_north_ACF.png (PNG copy)>]
-<Plots/far_north_resids_ACF.png, id=244, 476.53032pt x 207.77625pt>
+<Plots/far_north_resids_ACF.png, id=246, 476.53032pt x 207.77625pt>
 File: Plots/far_north_resids_ACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_ACF.png>
@@ -1581,7 +1581,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 501--502
 [][] 
  []
 
-<Plots/far_north_resids_PACF.png, id=245, 476.53032pt x 207.77625pt>
+<Plots/far_north_resids_PACF.png, id=247, 476.53032pt x 207.77625pt>
 File: Plots/far_north_resids_PACF.png Graphic file (type png)
 
 <use Plots/far_north_resids_PACF.png>
@@ -1593,14 +1593,14 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 505--506
 [][] 
  []
 
-<Plots/far_north_resids.png, id=246, 476.53032pt x 207.77625pt>
+<Plots/far_north_resids.png, id=248, 476.53032pt x 207.77625pt>
 File: Plots/far_north_resids.png Graphic file (type png)
 
 <use Plots/far_north_resids.png>
 Package pdftex.def Info: Plots/far_north_resids.png used on input line 511.
 (pdftex.def)             Requested size: 227.62672pt x 142.26878pt.
 
-<Plots/Central_ACF.png, id=247, 476.53032pt x 207.77625pt>
+<Plots/Central_ACF.png, id=249, 476.53032pt x 207.77625pt>
 File: Plots/Central_ACF.png Graphic file (type png)
 
 <use Plots/Central_ACF.png>
@@ -1611,7 +1611,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 520--521
 [][] 
  []
 
-<Plots/Central_PACF.png, id=248, 476.53032pt x 207.77625pt>
+<Plots/Central_PACF.png, id=250, 476.53032pt x 207.77625pt>
 File: Plots/Central_PACF.png Graphic file (type png)
 
 <use Plots/Central_PACF.png>
@@ -1629,7 +1629,7 @@ Overfull \vbox (25.12633pt too high) has occurred while \output is active []
 [14 <./Plots/far_north_PACF.png (PNG copy)> <./Plots/far_north_resids_ACF.png (
 PNG copy)> <./Plots/far_north_resids_PACF.png (PNG copy)> <./Plots/far_north_re
 sids.png> <./Plots/Central_ACF.png (PNG copy)>]
-<Plots/Central_resid_ACF.png, id=254, 476.53032pt x 207.77625pt>
+<Plots/Central_resid_ACF.png, id=256, 476.53032pt x 207.77625pt>
 File: Plots/Central_resid_ACF.png Graphic file (type png)
 
 <use Plots/Central_resid_ACF.png>
@@ -1640,7 +1640,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 528--529
 [][] 
  []
 
-<Plots/Central_resid_PACF.png, id=255, 476.53032pt x 207.77625pt>
+<Plots/Central_resid_PACF.png, id=257, 476.53032pt x 207.77625pt>
 File: Plots/Central_resid_PACF.png Graphic file (type png)
 
 <use Plots/Central_resid_PACF.png>
@@ -1651,7 +1651,7 @@ Overfull \hbox (43.11061pt too wide) in paragraph at lines 532--533
 [][] 
  []
 
-<Plots/Central_residuals.png, id=256, 476.53032pt x 207.77625pt>
+<Plots/Central_residuals.png, id=258, 476.53032pt x 207.77625pt>
 File: Plots/Central_residuals.png Graphic file (type png)
 
 <use Plots/Central_residuals.png>
@@ -1666,7 +1666,7 @@ ng>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-Overfull \vbox (693.5142pt too high) has occurred while \output is active []
+Overfull \vbox (267.61821pt too high) has occurred while \output is active []
 
 
 [17pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
@@ -1695,7 +1695,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
 Here is how much of TeX's memory you used:
  14897 strings out of 493316
  248486 string characters out of 6140414
- 388207 words of memory out of 5000000
+ 388122 words of memory out of 5000000
  18003 multiletter control sequences out of 15000+600000
  28541 words of font info for 72 fonts, out of 8000000 for 9000
  953 hyphenation exceptions out of 8191
@@ -1720,10 +1720,10 @@ ve/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy7.pk></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Americas_Warzone.pdf (17 pages, 738033 bytes).
+Output written on Americas_Warzone.pdf (17 pages, 738132 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
+ 428 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  57 named destinations out of 1000 (max. 500000)
  388 words of extra memory for PDF output out of 10000 (max. 10000000)
 
